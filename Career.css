@@ -1,0 +1,57 @@
+.career-header{
+   width: 100vw;
+}
+.career-header img{
+   width: 100vw;
+   max-height: 600px;
+}
+.take-step-head{
+   position: absolute;
+   top: 150px;
+   left: 5%;
+   font-size: 1.3rem;
+}
+.portfolio-opening{
+   margin-top: 70px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.job-opening-card{
+   width: 90%;
+   max-width: 1200px;
+   border: 2px solid rgb(175, 175, 175);
+   border-radius: 7px;
+   padding: 15px 30px;
+}
+.job-post-date-time{
+   font-size: small;
+   font-weight: 300;
+   margin: 5px 2px;
+   display: flex;
+   justify-content: space-between;
+}
+.job-desc-container{
+   margin: 5px 2px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+.job-desc{
+   font-size: small;
+   font-weight: 300;
+   width: 60%;
+}
+.apply-btn button{
+   background-color: #106570;
+   border: none;
+   color: white;
+   border-radius: 7px;
+   font-size: 11px;
+   padding: 10px 20px;
+   margin-top: 20px;
+}
+.hr{
+   width: 35%;
+   margin: 10px 0px;
+}
