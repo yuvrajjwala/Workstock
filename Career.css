@@ -12,7 +12,7 @@
    font-size: 1.3rem;
 }
 .portfolio-opening{
-   margin-top: 70px;
+   margin-top: 50px;
    width: 100%;
    display: flex;
    justify-content: center;
@@ -55,3 +55,49 @@
    width: 35%;
    margin: 10px 0px;
 }
+
+
+@media screen and (max-width: 700px) {
+   .take-step-head {
+      position: absolute;
+      top: 111px;
+      left: 5%;
+      font-size: 0.8rem;
+   }
+   .job-opening-card {
+      width: 93%;
+      margin: 13px;
+      max-width: 1200px;
+      border: 2px solid rgb(175, 175, 175);
+      border-radius: 7px;
+      padding: 15px 10px;
+  }
+  .hr {
+   width: 100%;
+   margin: 10px 1px;
+   }
+   .job-desc {
+      font-size: small;
+      font-weight: 300;
+      width: 100%;
+      text-align: center;
+  }
+  .apply-btn button {
+   background-color: #106570;
+   border: none;
+   color: white;
+   border-radius: 7px;
+   font-size: 11px;
+   padding: 10px 20px;
+   margin-top: 20px;
+   display: block;
+   margin: auto;
+   margin-top: 15px;
+}
+.apply-btn{
+   width: 100%;
+}
+.portfolio-opening {
+   margin-top: 20px;
+}
+ }
