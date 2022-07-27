@@ -20,7 +20,7 @@
 .job-opening-card{
    width: 90%;
    max-width: 1200px;
-   border: 2px solid rgb(175, 175, 175);
+   border: 2px solid rgb(202, 202, 202);
    border-radius: 7px;
    padding: 15px 30px;
 }
@@ -56,11 +56,26 @@
    margin: 10px 0px;
 }
 
-
+#phone-img-head{
+   width: 80%;
+   float: right;
+   margin-top: 15px;
+}
+#phone-img-2head{
+   width: 70%;
+   margin-bottom: 10px;
+}
 @media screen and (max-width: 700px) {
+   .career-header{
+      background-image: url('./assets/Designs/Path.png');
+      background-size: contain;
+   }
+   #hide-mob{
+      display: none;
+   }
    .take-step-head {
       position: absolute;
-      top: 111px;
+      top: 84px;
       left: 5%;
       font-size: 0.8rem;
    }
@@ -81,6 +96,7 @@
       font-weight: 300;
       width: 100%;
       text-align: center;
+      color: #545454;
   }
   .apply-btn button {
    background-color: #106570;
@@ -99,5 +115,11 @@
 }
 .portfolio-opening {
    margin-top: 20px;
+}
+.nav {
+   display: flex;
+   width: 100vw;
+   padding-top: 6px;
+   padding-bottom: 5px;
 }
  }
