@@ -2,7 +2,11 @@
    margin: 0;
    padding: 0;
    overflow-x: hidden;
-   font-family: 'Poppins',sans-serif;
+   font-family: 'izmir',sans-serif;
+}
+@font-face {
+   font-family: 'izmir';
+   src: url(./fonts/Demo_Fonts/Fontspring-DEMO-izmir-regular.otf);
 }
 /* NAVBAR */
 .nav{
@@ -30,7 +34,7 @@
    float: left;
    text-decoration: none;
    list-style: none;
-   margin-left: 50px;
+   margin-left: 70px;
    margin-top: 15px;
    color: white;
 }
@@ -47,7 +51,7 @@
 /* HEADER */
 .header-container{
    width: 100vw;
-   height: 720px;
+   height: 101vh;
    position: relative;
    bottom: 100px;
    z-index: -1;
@@ -64,14 +68,18 @@
 }
 .left-header-container{
    width: 39%;
-   padding-top: 150px;
+   padding-top: 24vh;
 }
 .right-header-container{
    width: 55%;
 }
+.subscribe-form-up form{
+   margin-top: 20px;
+}
 .right-header-container img{
-   width: 800px;
-   padding-top: 195px;
+   width: 55%;
+   position: absolute;
+   bottom: 0;
 }
 #woodstock{
    
@@ -79,8 +87,10 @@
 }
 .woodstock-container{
    color: white;
-   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   font-family: 'izmir', sans-serif;
    margin-left: 8%;
+   margin-bottom: 50px;
    font-size: 3rem;
 }
 .lower-div-form-header{
@@ -89,13 +99,13 @@
    display: flex;
 }
 #small-vertical img{
-   height: 270px;
+   height: 290px;
 }
 .subscribe-form-up{
-   width: 70%;
+   width: 75%;
    color: white;
-   font-family: 'Poppins', sans-serif;
-   font-size: 1rem;
+   font-family: 'izmir', sans-serif;
+   font-size: 1.2rem;
    line-height: 30px;
    margin-left: 20px;
 }
@@ -121,7 +131,7 @@
    width: 100%;
 }
 .below-header-container-heading{
-   font-family: 'Poppins',sans-serif;
+   font-family: 'izmir',sans-serif;
    font-size: 2rem;
    text-align: center;
    font-weight: 400;
@@ -134,14 +144,14 @@
 }
 .below-header-box{
    width: 20%;
-   max-width: 400px;
-   font-family: 'Poppins',sans-serif;
+   max-width: 250px;
+   font-family: 'izmir',sans-serif;
    justify-content: space-evenly;
    font-size: small;
 }
 .below-header-box img{
    padding-bottom: 15px;
-   width: 50px;
+   width: 60px;
    height: 60px;
 }
 #add-more-btn{
@@ -166,12 +176,14 @@
    background-position: center;
    background-size: cover;
    width: 100vw;
+   height: 1300px;
    margin-top: 100px;
 }
 .plant-container{
    display: flex;
    justify-content: center;
    padding-top: 70px;
+   height: 1100px;
    overflow: hidden;
 }
 .plant-date-container{
@@ -189,9 +201,10 @@
    margin: 0px 50px;
 }
 .plant-img-container img{
-   height: 600px;
+   height: 950px;
 }
 .plant-information{
+   overflow: hidden;
 }
 .plant-information-heading{
    width: 200px;
@@ -216,18 +229,21 @@
 /* PORTFOLIO */
 .protfolio-container{
    background-color: #1e181c;
-   height: 600px;
+   height: 90vh;
+   max-height: 850px;
    color: white;
    width: 100vw;
    display: flex;
+   position: relative;
    flex-wrap: wrap;
 
 }
 #big-portfolio-img img{
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
-   height: 500px;
+   height: 80%;
    position: absolute;
+   bottom: 0;
    right: 3%;
    margin-top: 100px;
 
@@ -261,7 +277,7 @@
    display: flex;
    justify-content: space-evenly;
    width: 90%;
-   max-width: 1200px;
+   max-width: 1400px;
    margin: auto;
    flex-wrap: wrap;
 }
@@ -286,8 +302,8 @@
 }
 
 .img-team{
-   width: 150px;
-   height: 150px;
+   width: 200px;
+   height: 200px;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
    margin: 30px;
@@ -434,7 +450,7 @@
    background-color: #1e181c;
    display: flex;
    justify-content: center;
-   height: 600px;
+   height: 700px;
    margin-top: 70px;
    margin-bottom: 70px;
    
@@ -450,9 +466,9 @@
 
 }
 .ideology-text{
-   width: 40%;
+   width: 42%;
    color: white;
-   font-size: 12px;
+   font-size: 14px;
 }
 .illustration-container{
    width: 55%;
@@ -469,10 +485,14 @@
 #des-1{
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
+   padding-top: 10px;
 }
 #des-1:hover{
    filter: none;
    -webkit-filter: grayscale(0);
+   transform: scale(1.03);
+   transition-duration: 0.5s;
+   
 }
 #des-2{
    bottom: 190px;
@@ -483,6 +503,8 @@
 #des-2:hover{
    filter: none;
    -webkit-filter: grayscale(0);
+   transform: scale(1.03);
+   transition-duration: 0.5s;
 }
 #des-3{
    bottom: 400px;
@@ -492,6 +514,8 @@
 #des-3:hover{
    filter: none;
    -webkit-filter: grayscale(0);
+   transform: scale(1.03);
+   transition-duration: 0.5s;
 }
 #des-4{
    bottom: 485px;
@@ -501,6 +525,8 @@
 #des-4:hover{
    filter: none;
    -webkit-filter: grayscale(0);
+   transform: scale(1.03);
+   transition-duration: 0.5s;
 }
 .text-idology{
    color: white;
@@ -510,7 +536,7 @@
 }
 .images-illustration{
    position: relative;
-   bottom: 200px;
+   bottom: 125px;
 }
 #text-1{
    left: 50%;
@@ -537,7 +563,7 @@
    font-weight: 500;
 }
 .ideology-text h3{
-   font-size: 22px;
+   font-size: 40px;
    margin-bottom: 40px;
 }
 #contact-us-btn{
@@ -552,7 +578,7 @@
 }
 #color-white {
    color: white;
-   font-size: 12px;
+   font-size: 14px;
    width: 60%;
    display: block;
    text-align: center;
@@ -569,6 +595,130 @@
    justify-content: center;
 }
 
+.plant-information-information {
+   width: 312px;
+   height: 129px;
+   font-size: 14px;
+   font-weight: 200;
+   color: #212624;
+   background-color: rgb(243, 243, 243);
+   border-radius: 5px;
+   margin-bottom: 105px;
+}
+.plant-information-heading {
+   width: 216px;
+   height: 228px;
+}
+.plant-date-container {
+   position: relative;
+   overflow: hidden;
+   top: 45px;
+   text-align: right;
+}
+.protfolio-container h1{
+   font-size: 2.3rem;
+}
+.protfolio-container p{
+   font-size: 1.13rem;
+}
+@media screen and (min-width: 1620px) {
+   .subscribe-form-up{
+      font-size: 1.3rem;
+   }
+   .images-illustration{
+      bottom: 100px;
+   }
+   #small-vertical img {
+      height: 340px;
+  }
+  .idology-container-main{
+   max-width: 1300px;
+  }
+  .ideology-text h3 {
+   font-size: 40px;
+   margin-bottom: 40px;
+}
+  .ideology-container {
+   width: 100vw;
+   background-color: rgb(30, 24, 28);
+   display: flex;
+   justify-content: center;
+   height: 90vh;
+   max-height: 850px;
+   margin-top: 70px;
+   margin-bottom: 70px;
+}
+  .woodstock-container {
+   color: white;
+   font-weight: bold;
+   font-family: 'izmir', sans-serif;
+   margin-left: 8%;
+   margin-bottom: 50px;
+   font-size: 3.5rem;
+}
+#woodstock {
+   font-size: 3.5rem;
+}
+.subscribe-form-up {
+   width: 75%;
+   color: white;
+   font-family: 'izmir', sans-serif;
+   font-size: 1.2rem;
+   line-height: 37px;
+   margin-left: 20px;
+}
+.ideology-text {
+   width: 45%;
+   color: white;
+   font-size: 16px;
+}
+#contact-us-btn {
+   border: none;
+   background-color: rgb(16, 101, 112);
+   color: white;
+   padding: 12px 40px;
+   margin-top: 30px;
+}
+.plant-information-information {
+   width: 312px;
+   height: 129px;
+   font-size: 14px;
+   font-weight: 200;
+   color: #212624;
+   background-color: rgb(243, 243, 243);
+   border-radius: 5px;
+   margin-bottom: 105px;
+}
+.plant-information-heading {
+   width: 216px;
+   height: 228px;
+}
+.plant-date-container {
+   position: relative;
+   overflow: hidden;
+   top: 45px;
+   text-align: right;
+}
+.protfolio-container {
+   background-color: rgb(30, 24, 28);
+   height: 90vh;
+   max-height: 850px;
+   color: white;
+   width: 100vw;
+   display: flex;
+   position: relative;
+   flex-wrap: wrap;
+}
+#big-portfolio-img img {
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   height: 80%;
+   position: absolute;
+   right: 3%;
+   bottom: 0;
+   margin-top: 100px;
+}
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 1270px){
    .input-newsletter {
@@ -578,6 +728,32 @@
    border: none;
    padding: 7px;
   }
+  .ideology-text h3 {
+   font-size: 30px;
+   margin-bottom: 40px;
+}
+  .woodstock-container {
+   color: white;
+   font-weight: bold;
+   font-family: 'izmir', sans-serif;
+   margin-left: 8%;
+   margin-bottom: 50px;
+   font-size: 2rem;
+}
+#woodstock {
+   font-size: 2rem;
+}
+#big-portfolio-img img{
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+   height: 60%;
+   position: absolute;
+   bottom: 0;
+   right: 3%;
+   margin-top: 100px;
+
+}
+
  }
  @media screen and (max-width: 1000px){
    #email-input-subscribe {
@@ -586,7 +762,7 @@
 
  }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
    .show-mob-text{
       display: block;
    }
@@ -615,6 +791,7 @@
       width: 100%;
    }
    .right-header-container img{
+      position: relative;
       width: 100vw;
       padding-top: 0px;
    }
@@ -682,7 +859,7 @@
 .ideology-text {
    width: 90%;
    color: white;
-   font-size: 12px;
+   font-size: 14px;
    text-align: center;
 }
 #des-1 {
@@ -712,7 +889,7 @@
    -webkit-filter: grayscale(100%);
 }
 .images-illustration{
-   margin-top: 60px;
+   /* margin-top: 60px; */
 }
 .ideology-container{
    height: 1225px;
@@ -742,8 +919,26 @@
    overflow: hidden;
    padding-bottom: 70px;
 }
+.plant-information-information {
+   width: 250px;
+   height: 150px;
+   font-size: 14px;
+   font-weight: 200;
+   color: #212624;
+   background-color: rgb(243, 243, 243);
+   border-radius: 5px;
+   margin-bottom: 105px;
+}
 .plant-container{
+   height: auto;
    display: none;
+}
+.plant-grow-section{
+   height: auto;
+}
+.ideology-text h3 {
+   font-size: 22px;
+   margin-bottom: 40px;
 }
 .plant-img-container {
    position: relative;
@@ -777,9 +972,24 @@
    right: 3%;
    margin-top: 299px;
 }
+.protfolio-container {
+   height: 800px;
+}
+.protfolio-container h1{
+   font-size: 2.3rem;
+   text-align: center;
+}
+.protfolio-container p{
+   font-size: 16px;
+   text-align: center;
+}
+.protfolio-container img{
+   display: block;
+   margin: auto;
+}
 .portfolio-information {
    width: 90%;
-   margin-left: 25px;
+   margin-left: 15px;
    margin-top: 92px;
    font-size: 13px;
 }
