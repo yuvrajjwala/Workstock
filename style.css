@@ -1,3 +1,16 @@
+
+@font-face {
+   font-family: 'izmir';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Regular.otf);
+}
+@font-face {
+   font-family: 'izmir-bold';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Bold.otf);
+}
+@font-face {
+   font-family: 'izmir1';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Extralight.otf);
+}
 *{
    margin: 0;
    padding: 0;
@@ -7,10 +20,7 @@
 body{
    background-color: #f9f9f9;
 }
-@font-face {
-   font-family: 'izmir';
-   src: url(./fonts/Demo_Fonts/Fontspring-DEMO-izmir-regular.otf);
-}
+
 /* NAVBAR */
 .nav{
    display: flex;
@@ -92,7 +102,7 @@ body{
 .woodstock-container{
    color: white;
    font-weight: bold;
-   font-family: 'izmir', sans-serif;
+   font-family: 'izmir-bold' !important;
    margin-left: 8%;
    margin-bottom: 50px;
    font-size: 3rem;
@@ -153,6 +163,11 @@ body{
    justify-content: space-evenly;
    font-size: small;
 }
+.below-header-box p{
+   color: #000000cd;
+   font-weight: lighter;
+   font-family: 'izmir1' !important;font-family: 'izmir1';
+}
 .below-header-box img{
    padding-bottom: 15px;
    width: 60px;
@@ -188,7 +203,7 @@ body{
    display: flex;
    justify-content: center;
    padding-top: 70px;
-   height: 1100px;
+   height: 1470px;
    overflow: hidden;
 }
 .plant-date-container{
@@ -197,8 +212,12 @@ body{
    text-align: right;
 }
 .plant-date-container p{
-   font-size: 12px;
+   font-size: 13px;
    margin-bottom: 4px;
+   color:#0000009e;
+}
+.plant-date-container h5{
+   font-size: 1.1rem;
 }
 .plant-img-container{
    position: relative;
@@ -206,7 +225,7 @@ body{
    margin: 0px 50px;
 }
 .plant-img-container img{
-   height: 950px;
+   height: 1220px;
 }
 .plant-information{
    overflow: hidden;
@@ -221,13 +240,17 @@ body{
    font-size: 10px;
    font-weight: 200;
    color: #212624;
-   background-color: rgb(243, 243, 243);
+   background-color: rgb(255, 255, 255);
    border-radius: 5px;
    margin-bottom: 50px;
 }
-.plant-information-information p{
-   margin: 13px 3px;
+.plant-information-information p {
+   margin: 18px 5px;
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
+   opacity: 0.8;
    margin-left: 15px;
+   margin-bottom: 23px;
 }
 
 
@@ -258,15 +281,24 @@ body{
     -webkit-filter: grayscale(0);
 }
 .portfolio-information{
-   width: 400px;
+   width: 550px;
    margin-left: 100px;
    margin-top: 100px;
    font-size: 13px;
+   color: rgba(255, 255, 255, 0.666);
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
+}
+.portfolio-information p{
+   font-size: 13px;
+   color: rgba(255, 255, 255, 0.666);
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
 }
 .portfolio-information2
 {
-   font-size: 12px;
-   width: 500px;
+   font-size: 17px;
+   width: 625px;
    margin-left: 100px;
    margin-top: 100px;
 }.our-portfolio-company{
@@ -324,10 +356,26 @@ body{
    font-size: small;
    font-weight: 700;
 }
+.team-name-details p{
+   text-align: center;
+   font-size: small;
+   font-weight: 700;
+   font-size: 18px;
+}
+.team-name-details img :nth-child(2){
+   width: 20px;
+}
 .span-pos-details{
    text-align:center;
    font-size: smaller;
    font-weight: 400;
+   color: rgba(0, 0, 0, 0.712);
+}
+.span-pos-details2{
+   text-align:center;
+   font-size: smaller;
+   font-weight: 400;
+   color: rgba(255, 255, 255, 0.712);
 }
 .advisor-container{
    display: flex;
@@ -407,6 +455,7 @@ body{
 .news-text{
    margin-left: 2%;
    font-weight: bold;
+   font-family: 'izmir-bold' !important;
 }
 .final-container{
    display: flex;
@@ -427,6 +476,7 @@ body{
    font-size: small;
    font-weight: 200;
    text-align: center;
+   font-family: 'izmir1' !important;
 }
 .social-icons{
    display: flex;
@@ -472,9 +522,14 @@ body{
 }
 .ideology-text{
    width: 42%;
-   color: white;
+   color: #ffffffcf;
+   opacity: 0.8;
    font-size: 14px;
    font-weight: lighter;
+   font-family: 'izmir1' !important;
+}
+.hide-mob-text{
+   font-family: 'izmir1' !important;
 }
 .illustration-container{
    width: 55%;
@@ -490,6 +545,7 @@ body{
 }
 #des-1{
    filter: grayscale(100%);
+   width: 230px;
    -webkit-filter: grayscale(100%);
    padding-top: 10px;
 }
@@ -501,7 +557,8 @@ body{
    
 }
 #des-2{
-   bottom: 190px;
+   bottom: 141px;
+   width: 396px;
    position: relative;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
@@ -513,7 +570,8 @@ body{
    transition-duration: 0.5s;
 }
 #des-3{
-   bottom: 400px;
+   bottom: 318px;
+   width: 456px;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
@@ -524,7 +582,8 @@ body{
    transition-duration: 0.5s;
 }
 #des-4{
-   bottom: 485px;
+   bottom: 398px;
+   width: 411px;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
@@ -535,7 +594,7 @@ body{
    transition-duration: 0.5s;
 }
 .text-idology{
-   color: white;
+   color: rgba(255, 255, 255, 0.741);
    position: relative;
    width: 200px;
    font-size: 12px;
@@ -545,22 +604,22 @@ body{
    bottom: 125px;
 }
 #text-1{
-   left: 50%;
+   left: 70%;
    visibility: hidden;
 }
 #text-2{
-   left: 60%;
-   top: 10%;
+   left: 72%;
+   top: 0%;
    visibility: hidden;
 }
 #text-3{
-   left: 10%;
-   top:15%;
+   left: 70%;
+   top:-6%;
    visibility: hidden;
 }
 #text-4{
    left: 70%;
-   top: 18%;
+   top: -10%;
    visibility: hidden;
 }
 .bg-woodstock{
@@ -582,6 +641,9 @@ body{
 .show-mob-text{
    display: none;
 }
+#font-bold{
+   font-family: 'izmir-bold' !important ;
+}
 #color-white {
    color: white;
    font-size: 14px;
@@ -593,6 +655,9 @@ body{
    margin: auto;
    
 }
+#origin-wood{
+   display: none;
+}
 #color-white button{
    background-color: #087d5c;
 }
@@ -603,17 +668,17 @@ body{
 
 .plant-information-information {
    width: 312px;
-   height: 129px;
+   height: 147px;
    font-size: 14px;
    font-weight: 200;
    color: #212624;
-   background-color: rgb(243, 243, 243);
+   background-color: rgb(255, 255, 255);
    border-radius: 5px;
-   margin-bottom: 105px;
+   margin-bottom: 153px;
 }
 .plant-information-heading {
    width: 216px;
-   height: 228px;
+   height: 296px;
 }
 .plant-date-container {
    position: relative;
@@ -623,9 +688,11 @@ body{
 }
 .protfolio-container h1{
    font-size: 2.3rem;
+   color: rgb(255, 255, 255);
 }
 .protfolio-container p{
-   font-size: 1.13rem;
+   font-size: 17px;
+   color: rgba(255, 255, 255, 0.734);
 }
 @media screen and (min-width: 1620px) {
    .subscribe-form-up{
@@ -658,7 +725,7 @@ body{
   .woodstock-container {
    color: white;
    font-weight: bold;
-   font-family: 'izmir', sans-serif;
+   font-family: 'izmir-bold' !important;
    margin-left: 8%;
    margin-bottom: 50px;
    font-size: 3.5rem;
@@ -676,9 +743,10 @@ body{
 }
 .ideology-text {
    width: 45%;
-   color: white;
+   color: #ffffffcf;
    font-size: 16px;
    font-weight: lighter;
+   font-family: 'izmir1' !important;
 }
 #contact-us-btn {
    border: none;
@@ -688,18 +756,18 @@ body{
    margin-top: 30px;
 }
 .plant-information-information {
-   width: 312px;
-   height: 129px;
+   width: 360px;
+   height: 148px;
    font-size: 14px;
    font-weight: 200;
    color: #212624;
-   background-color: rgb(243, 243, 243);
+   background-color: rgb(255, 255, 255);
    border-radius: 5px;
-   margin-bottom: 105px;
+   margin-bottom: 149px;
 }
 .plant-information-heading {
    width: 216px;
-   height: 228px;
+   height: 296px;
 }
 .plant-date-container {
    position: relative;
@@ -743,7 +811,7 @@ body{
   .woodstock-container {
    color: white;
    font-weight: bold;
-   font-family: 'izmir', sans-serif;
+   font-family: 'izmir-bold' !important;
    margin-left: 8%;
    margin-bottom: 50px;
    font-size: 2rem;
@@ -793,16 +861,21 @@ body{
       height: auto;
    }
    .left-header-container{
+      padding-top: 19vh;
       width: 100%;
    }
    .right-header-container{
       width: 100%;
    }
-   .right-header-container img{
-      position: relative;
-      width: 100vw;
-      padding-top: 0px;
-   }
+   .right-header-container img
+      {
+         position: relative;
+         width: 113vw;
+         /* padding-right: 82px; */
+         padding-top: 0px;
+         position: relative;
+         left: -41px;
+     }
    .woodstock-container{
       margin-left: 0%;
       text-align: center;
@@ -821,13 +894,13 @@ body{
       font-size: 0.9rem;
    }
    #subscribe {
-      padding: 10px;
+      padding: 15px;
       margin-top: 30px;
       margin-bottom: 20px;
       width: 70%;
   }
   #subscribe-button{
-   padding: 10px;
+   padding: 15px;
   }
   #subscribe::placeholder{
    font-size: 10px;
@@ -850,6 +923,11 @@ body{
    text-align: center;
    font-weight: 600;
 }
+.below-header-section {
+   width: 100%;
+   position: relative;
+   bottom: 46px;
+}
 .below-header-box {
    max-width: 400px;
    text-align: center;
@@ -866,11 +944,46 @@ body{
 }
 .ideology-text {
    width: 90%;
-   color: white;
-   font-size: 14px;
+   color: #ffffffa8;
+   font-size: 12px;
    font-weight: lighter;
+   font-family: 'izmir1' !important;
    text-align: center;
 }
+.bg-woodstock{
+   background-image: none;
+   color: white;
+   font-family: 'izmir-bold' !important;
+   position: relative;
+   right: 10px;
+}
+.illustration-container{
+   width: 55%;
+   min-width: 525px;
+   display: flex;
+   z-index: 0;
+   position: relative;
+   bottom: 81px;
+   flex-direction: column;
+   justify-content: center;
+   }
+   #origin-wood{
+      display: block;
+      position: relative;
+      top:10px;
+   }
+   #color-white {
+      color: #ffffffa8;
+      font-size: 12px;
+      width: 60%;
+      display: block;
+      text-align: center;
+      position: relative;
+      bottom: 144px;
+      margin: auto;
+      font-family: 'izmir1';
+      
+   }
 #des-1 {
    width: 140px;
    filter: grayscale(100%);
@@ -901,18 +1014,18 @@ body{
    /* margin-top: 60px; */
 }
 .ideology-container{
-   height: 1225px;
+   height: 1000px;
 }
 #contact-us-btn {
    border: none;
    background-color: #106570;
    color: white;
-   padding: 7px 30px;
+   padding: 10px 30px;
    /* width: 35%; */
    text-align: center;
    position: relative;
    margin: auto;
-   bottom: 91px;
+   bottom: 121px;
 }
 .hide-mob-text{
    display: none;
@@ -924,18 +1037,21 @@ body{
 }
 .plant-container-mob{
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
    overflow: hidden;
    padding-bottom: 70px;
+   height: 1200px;
+   margin-left: 10px;
 }
 .plant-information-information {
-   width: 250px;
-   height: 150px;
-   font-size: 14px;
-   font-weight: 200;
-   color: #212624;
-   background-color: rgb(243, 243, 243);
-   border-radius: 5px;
+    width: 250px;
+    height: 103px;
+    font-size: 14px;
+    margin-top: 15px;
+    font-weight: 200;
+    color: rgba(15, 15, 15, 0.596);
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
    margin-bottom: 105px;
 }
 .plant-container{
@@ -946,8 +1062,11 @@ body{
    height: auto;
 }
 .ideology-text h3 {
+   color: white;
+   height: 30px;
    font-size: 22px;
-   margin-bottom: 40px;
+   overflow: hidden;
+   padding-bottom: 20px;
 }
 .plant-img-container {
    position: relative;
@@ -961,13 +1080,25 @@ body{
    text-align: left;
 }
 .plant-img-container img {
-   height: 700px;
+   height: 1030px;
 }
 .plant-information-heading {
    width: auto;
-   height: 140px;
+   height: 182px;
    overflow: hidden;
-   margin-bottom: 30px;
+   margin-bottom: 66px;
+}
+.plant-information-information p {
+   margin: 18px 5px;
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
+   font-size: 12px;
+   opacity: 0.8;
+   margin-left: 15px;
+   margin-bottom: -7px;
+}
+.plant-date-container h5{
+   font-size: 0.9rem;
 }
 .plant-information-information p{
    font-family: sans-serif !important;
@@ -975,23 +1106,33 @@ body{
 #big-portfolio-img img {
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
-   height: 301px;
-   width: 90%;
+   height: 292px;
+   width: 101%;
    position: absolute;
-   right: 3%;
+   right: 0%;
    margin-top: 299px;
+   /* bottom: 47px; */
 }
+
 .protfolio-container {
-   height: 800px;
+   height: 570px;
 }
 .protfolio-container h1{
    font-size: 2.3rem;
    text-align: center;
 }
 .protfolio-container p{
-   font-size: 16px;
-   text-align: center;
+   font-size: 14px;
+    color: #ffffffbd;
+    text-align: center;
 }
+.team-name-details p {
+   text-align: center;
+   font-size: small;
+   font-weight: 700;
+   font-size: 14px;
+}
+
 .protfolio-container img{
    display: block;
    margin: auto;
@@ -999,7 +1140,7 @@ body{
 .portfolio-information {
    width: 90%;
    margin-left: 15px;
-   margin-top: 92px;
+   margin-top: 32px;
    font-size: 13px;
 }
 .company-images img {
@@ -1022,6 +1163,10 @@ body{
    width: 90%;
    margin-left: 20px;
    margin-top: 49px;
+}
+
+#profile-container-id{
+   height: 733px !important;
 }
 .img-team {
    width: 100px;
@@ -1089,12 +1234,19 @@ body{
 }
 .final-container p {
    width: 90%;
+   color: #000000b5;
+   font-weight: lighter;
+   font-family: 'izmir1' !important;
 }
 .team-name-details p{
    max-width: 140px !important;
 }
 .newletter-container {
    width: 80%;
+}
+.mob-prot-2 img{
+   position: absolute;
+   bottom: 47px !important;
 }
  }
  @media screen and (max-width: 350px){
