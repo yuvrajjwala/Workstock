@@ -188,6 +188,9 @@ body{
    color: white;
    
 }
+#origin-wood{
+   display: none;
+}
 
 /* PLANT GROW SECTION */
 .plant-grow-section{
@@ -317,6 +320,7 @@ body{
    max-width: 1400px;
    margin: auto;
    flex-wrap: wrap;
+   border: 2px solid red;
 }
 .company-images{
    margin: 10px;
@@ -655,9 +659,7 @@ body{
    margin: auto;
    
 }
-#origin-wood{
-   display: none;
-}
+
 #color-white button{
    background-color: #087d5c;
 }
@@ -968,11 +970,7 @@ body{
    flex-direction: column;
    justify-content: center;
    }
-   #origin-wood{
-      display: block;
-      position: relative;
-      top:10px;
-   }
+
    #color-white {
       color: #ffffffa8;
       font-size: 12px;
@@ -1259,6 +1257,11 @@ body{
       left: 44%;
       top: -0px;
       visibility: hidden;
+   }
+   #origin-wood{
+      display: block;
+      position: relative;
+      top:10px;
    }
 
 #text-3{
