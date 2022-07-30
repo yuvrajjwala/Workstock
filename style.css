@@ -915,6 +915,7 @@ body{
    margin: auto;
    text-align:center;
 }
+
 .below-header-container-heading {
    font-size: 1.4rem;
    width: 90%;
@@ -1248,6 +1249,28 @@ body{
    position: absolute;
    bottom: 47px !important;
 }
+#text-1 {
+   left: 44%;
+   top: 39px;
+   visibility: hidden;
+}
+#text-2
+   {
+      left: 44%;
+      top: -0px;
+      visibility: hidden;
+   }
+
+#text-3{
+   left: 44%;
+   top: -40px;
+}
+#text-4
+   {
+      left: 44%;
+      top: -100px;
+      visibility: hidden;
+   }
  }
  @media screen and (max-width: 350px){
    #email-input-subscribe {
