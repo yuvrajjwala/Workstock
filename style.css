@@ -4,6 +4,9 @@
    overflow-x: hidden;
    font-family: 'izmir',sans-serif;
 }
+body{
+   background-color: #f9f9f9;
+}
 @font-face {
    font-family: 'izmir';
    src: url(./fonts/Demo_Fonts/Fontspring-DEMO-izmir-regular.otf);
@@ -71,14 +74,15 @@
    padding-top: 24vh;
 }
 .right-header-container{
-   width: 55%;
+   width: 45%;
 }
 .subscribe-form-up form{
    margin-top: 20px;
 }
-.right-header-container img{
-   width: 55%;
+.right-header-container img {
+   width: 60%;
    position: absolute;
+   right: 20px;
    bottom: 0;
 }
 #woodstock{
@@ -113,7 +117,7 @@
    background-color: #212624;
    border: none;
    padding: 13px;
-   width: 60%;
+   width: 70%;
    border-radius: 7px;
    color: #087d5c;
 }
@@ -134,7 +138,7 @@
    font-family: 'izmir',sans-serif;
    font-size: 2rem;
    text-align: center;
-   font-weight: 400;
+   font-weight: 600;
 }
 .below-header-four-box{
    display: flex;
@@ -154,14 +158,14 @@
    width: 60px;
    height: 60px;
 }
-#add-more-btn{
-   background-color: #087d5c;
+#add-more-btn {
+   background-color: #106570;
    color: white;
    border: none;
-   padding: 8px 20px;
+   padding: 14px 30px;
    display: block;
    margin: auto;
-   margin-top: 80px;
+   margin-top: 117px;
 }
 
 .a-text{
@@ -176,7 +180,8 @@
    background-position: center;
    background-size: cover;
    width: 100vw;
-   height: 1300px;
+   height: 1600px;
+   background-color: #f9f9f9;
    margin-top: 100px;
 }
 .plant-container{
@@ -469,6 +474,7 @@
    width: 42%;
    color: white;
    font-size: 14px;
+   font-weight: lighter;
 }
 .illustration-container{
    width: 55%;
@@ -623,7 +629,7 @@
 }
 @media screen and (min-width: 1620px) {
    .subscribe-form-up{
-      font-size: 1.3rem;
+      font-size: 1.1rem;
    }
    .images-illustration{
       bottom: 100px;
@@ -643,7 +649,8 @@
    background-color: rgb(30, 24, 28);
    display: flex;
    justify-content: center;
-   height: 90vh;
+   height: 87vh;
+   min-height: 700px;
    max-height: 850px;
    margin-top: 70px;
    margin-bottom: 70px;
@@ -663,7 +670,7 @@
    width: 75%;
    color: white;
    font-family: 'izmir', sans-serif;
-   font-size: 1.2rem;
+   font-size: 1.1rem;
    line-height: 37px;
    margin-left: 20px;
 }
@@ -671,6 +678,7 @@
    width: 45%;
    color: white;
    font-size: 16px;
+   font-weight: lighter;
 }
 #contact-us-btn {
    border: none;
@@ -816,7 +824,7 @@
       padding: 10px;
       margin-top: 30px;
       margin-bottom: 20px;
-      width: 69%;
+      width: 70%;
   }
   #subscribe-button{
    padding: 10px;
@@ -860,6 +868,7 @@
    width: 90%;
    color: white;
    font-size: 14px;
+   font-weight: lighter;
    text-align: center;
 }
 #des-1 {
