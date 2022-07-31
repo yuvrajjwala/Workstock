@@ -11,6 +11,10 @@
    font-family: 'izmir1';
    src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Extralight.otf);
 }
+@font-face {
+   font-family: 'izmir-medium';
+   src: url(./fonts/Izmir/Ahmet\ Altun\ -\ Izmir-Medium.otf);
+}
 *{
    margin: 0;
    padding: 0;
@@ -300,11 +304,15 @@ body{
 }
 .portfolio-information2
 {
-   font-size: 17px;
+   font-size: 14px;
    width: 625px;
    margin-left: 100px;
    margin-top: 100px;
-}.our-portfolio-company{
+   font-weight: lighter;
+   color: rgba(255, 255, 255, 0.7);
+   font-family: 'izmir1',sans-serif !important;
+}
+.our-portfolio-company{
    padding-top: 70px;
    background-color: rgba(249,249,249,1);
 }
@@ -319,28 +327,115 @@ body{
    width: 90%;
    max-width: 1400px;
    margin: auto;
+   overflow: hidden;
    flex-wrap: wrap;
-   border: 2px solid red;
+   padding: 60px;
+
+   padding-top: 20px;
 }
+
+.boxess{
+   overflow: visible;
+   width: 150px;
+   height: 100px;
+   margin: 20px;
+   position: relative;
+   overflow: hidden;
+ }
+ .boxess:hover{
+   overflow: visible;
+ }
+ .boxess:hover > .hover-container{
+   display: block;
+   transform: scale(1.4);
+   transition-duration: 0.5s;
+   height: auto !important;
+   box-shadow: 1px 1px 5px 1px rgba(124, 124, 124, 0.296);
+   z-index: 99999;
+   /* width: 200px;
+   opacity: 1;
+   bottom: 40px;border: 2px solid rgb(0, 41, 128);
+   right: 40px;
+   padding: 15px; */
+   
+ }
+ .boxess:hover > .imge{
+   display: none;
+ }
+ .hover-container{
+   width: 200px;
+   height: 130px;
+   opacity: 1;
+   bottom: 10px;
+   right: 40px;
+   position: relative;
+   overflow: hidden;
+   font-family: 'izmir' !important;
+   background-color: rgb(255, 255, 255);
+   text-align: center;
+   font-size: 7px;
+  z-index: -1;
+   border-radius: 3px;
+   padding: 5px;
+
+ }
+ #linkedin-img{
+   width: 17px;
+   margin-top: 14px;
+   margin-bottom: 10px;
+ }
+ .imge{
+   width: 100%;
+   position: absolute;
+   width: 100%;
+   top:0;
+ }
+ .imge-hover{
+   width: 120px;
+   height: 50px;
+   display: block;
+   margin: auto;
+   margin-top: 10px;
+ }
 .company-images{
    margin: 10px;
+   height: 100px;
+   width: 200px;
+   overflow: visible;
 }
-.company-images img{
+.img-comp{
    width: 70%;
    height: 70%;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
+   z-index: 10;
 }
-.company-images img:hover{
+.img-comp:hover{
    filter: none;
    -webkit-filter: grayscale(0);
-   transform: scale(1.1);
+   position: relative;
+   /* transform: scale(2.5); */
+   /* height: 200px;
+   width: 200px;
+   top: -20px;
+   right: 20px; */
+
+   overflow: visible;
    transition-duration: 0.5s;
+   z-index: 9999;
+}
+.hover-img-div{
+   background-color: red;
+   position: relative;
+   z-index: 999;
+   width: 300px;
+   height: 300px;
 }
 .core-team{
    padding-top: 70px;
    padding-bottom: 50px;
 }
+
 
 .img-team{
    width: 200px;
@@ -379,7 +474,7 @@ body{
    text-align:center;
    font-size: smaller;
    font-weight: 400;
-   color: rgba(255, 255, 255, 0.712);
+   color: rgb(255 255 255 / 49%);
 }
 .advisor-container{
    display: flex;
@@ -450,9 +545,10 @@ body{
 #submit-news{
    background-color: black;
    color: white;
-   padding: 5px;
-   border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
+   padding: 8px;
+   font-size: 10px;
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
    position: relative;
    left: -25px;
 }
@@ -533,7 +629,8 @@ body{
    font-family: 'izmir1' !important;
 }
 .hide-mob-text{
-   font-family: 'izmir1' !important;
+   font-family: 'izmir' !important;
+   cursor: pointer;
 }
 .illustration-container{
    width: 55%;
@@ -573,9 +670,9 @@ body{
    transform: scale(1.03);
    transition-duration: 0.5s;
 }
-#des-3{
-   bottom: 318px;
-   width: 456px;
+#des-3 {
+   bottom: 296px;
+   width: 401px;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
@@ -585,9 +682,9 @@ body{
    transform: scale(1.03);
    transition-duration: 0.5s;
 }
-#des-4{
-   bottom: 398px;
-   width: 411px;
+#des-4 {
+   bottom: 365px;
+   width: 358px;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
@@ -693,9 +790,25 @@ body{
    color: rgb(255, 255, 255);
 }
 .protfolio-container p{
-   font-size: 17px;
-   color: rgba(255, 255, 255, 0.734);
+   font-size: 14px;
+   font-family: 'izmir',sans-serif !important;
+   color: rgba(255, 255, 255, 0.658);
 }
+
+
+#companyName5,#companyName4,#companyName3,#companyName2,#companyName05,#companyName04,#companyName03,#companyName02{
+   display: none;
+}
+
+.company-border{
+   margin:auto;
+   display: block;
+   width: 40px; 
+   margin-top: 7px;
+    height: 3px;
+}
+
+
 @media screen and (min-width: 1620px) {
    .subscribe-form-up{
       font-size: 1.1rem;
@@ -991,21 +1104,22 @@ body{
 
 
 #des-2 {
-   bottom: 74px;
+   bottom: 60px;
    width: 219px;
    position: relative;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
 #des-3 {
-   bottom: 168px;
-   width: 256px;
+   bottom: 138px;
+   width: 218px;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
+
 #des-4 {
-   bottom: 201px;
-   width: 180px;
+   bottom: 171px;
+   width: 200px;
    filter: grayscale(100%);
    -webkit-filter: grayscale(100%);
 }
@@ -1156,12 +1270,16 @@ body{
    display: flex;
    margin: 30px 0px;
    justify-content: space-evenly;
+   margin-bottom: 10px;
 }
 .portfolio-information2 {
    font-size: 12px;
    width: 90%;
    margin-left: 20px;
    margin-top: 49px;
+}
+.portfolio-information2 p {
+   font-family: 'izmir',sans-serif !important;
 }
 
 #profile-container-id{
@@ -1212,17 +1330,23 @@ body{
 #submit-news {
    background-color: black;
    color: white;
-   padding: 6px;
+   padding: 10px;
+   font-size: small;
+   font-family: 'izmir1';
+   font-size: 10px;
    border: none;
-   border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
    position: relative;
    left: -25px;
 }
+}
 #email-input-subscribe {
    padding: 6px;
-   border-radius: 15px;
+   border-radius: 10px;
    width: 160px;
+   padding-left: 14px;
+   /* padding-bottom: 7px; */
    border: none;
 }
 #email-input-subscribe::placeholder{
@@ -1242,6 +1366,7 @@ body{
 }
 .newletter-container {
    width: 80%;
+   justify-content: space-around;
 }
 .mob-prot-2 img{
    position: absolute;

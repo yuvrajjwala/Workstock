@@ -1,15 +1,17 @@
 .career-header{
    width: 100vw;
+   margin-bottom: 70px;
 }
 .career-header img{
    width: 100vw;
-   max-height: 600px;
+   max-height: 750px;
 }
 .take-step-head{
    position: absolute;
    top: 150px;
-   left: 5%;
-   font-size: 1.3rem;
+   left: 10%;
+   font-size: 2.2rem;
+   font-family: 'izmir-medium' !important;
 }
 .portfolio-opening{
    margin-top: 50px;
@@ -19,17 +21,36 @@
 }
 .job-opening-card{
    width: 90%;
-   max-width: 1200px;
-   border: 2px solid rgb(202, 202, 202);
+   max-width: 1366px;
+   border: 1px solid #b3b3b3;
    border-radius: 7px;
    padding: 15px 30px;
 }
 .job-post-date-time{
-   font-size: small;
+   font-size: 16px;
    font-weight: 300;
    margin: 5px 2px;
    display: flex;
    justify-content: space-between;
+}
+#phone-img-head,#phone-img-2head{
+   display: none;
+}
+#career-open{
+   font-size: 2.5rem;
+}
+#img-open{
+   margin-top: 5px !important;
+}
+.title-dev{
+   font-family: 'izmir-medium' !important;
+   margin-bottom: 13px;
+   font-size: 1.3rem;
+}
+
+.job-post-date-time{
+   margin-bottom: 16px;
+   font-family: 'izmir1';
 }
 .job-desc-container{
    margin: 5px 2px;
@@ -38,22 +59,27 @@
    justify-content: space-between;
 }
 .job-desc{
-   font-size: small;
+   font-size: 16px;
    font-weight: 300;
    width: 60%;
+   font-family: 'izmir';
 }
 .apply-btn button{
    background-color: #106570;
    border: none;
    color: white;
    border-radius: 7px;
-   font-size: 11px;
-   padding: 10px 20px;
+   font-size: 18px;
+   padding: 12px 35px;
+   font-family: 'izmir';
    margin-top: 20px;
 }
 .hr{
    width: 35%;
    margin: 10px 0px;
+}
+.job-loc,.job-date{
+   font: 16px !important;
 }
 
 #phone-img-head{
@@ -76,8 +102,9 @@
    .take-step-head {
       position: absolute;
       top: 84px;
-      left: 5%;
-      font-size: 0.8rem;
+      width: 210px;
+      left: 8%;
+      font-size: 1.4rem;
    }
    .job-opening-card {
       width: 93%;
@@ -85,8 +112,9 @@
       max-width: 1200px;
       border: 2px solid rgb(175, 175, 175);
       border-radius: 7px;
-      padding: 15px 10px;
+      padding: 30px 20px;
   }
+
   .hr {
    width: 100%;
    margin: 10px 1px;
@@ -103,12 +131,12 @@
    border: none;
    color: white;
    border-radius: 7px;
-   font-size: 11px;
-   padding: 10px 20px;
+   font-size: 13px;
+   padding: 10px 25px;
    margin-top: 20px;
    display: block;
    margin: auto;
-   margin-top: 15px;
+   margin-top: 40px;
 }
 .apply-btn{
    width: 100%;
@@ -121,5 +149,27 @@
    width: 100vw;
    padding-top: 6px;
    padding-bottom: 5px;
+}
+#career-open {
+   font-size: 1.7rem;
+}
+.job-post-date-time{
+   font-size: 14px;
+}
+.title-dev {
+   font-family: 'izmir-medium' !important;
+   margin-bottom: 16px;
+   font-size: 1.3rem;
+}
+.job-desc-container {
+   margin: 5px 2px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 24px;
+}
+#phone-img-head,#phone-img-2head{
+   display: block;
+   margin-top: 70px;
 }
  }
