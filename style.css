@@ -1361,6 +1361,9 @@ body{
 .portfolio-information2 p {
    font-family: 'izmir1',sans-serif !important;
 }
+#our-team{
+   height: 707px;
+}
 
 #profile-container-id{
    height: 733px !important;
