@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,67 @@
    <link rel="stylesheet" href="style.css">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="stylesheet" href="Career.css">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
    <title>Career | Workstock</title>
 </head>
+
 <body>
 
-    <!-- NAVBAR -->
-    <div>
-      <nav style="background-color: #1e181c;" class="nav">
+   <!-- NAVBAR -->
+   <div>
+      <nav style="background-color: #181D1B;" class="nav">
          <div class="logo-div">
-            <img src="./assets/Logos/Mask Group 9.png"></img>
+            <img onclick="window.location='/'" src="./assets/Logos/Mask Group 9.png"></img>
             <ul class="nav-ul">
-               <li>About</li>
-               <li>Blog</li>
-               <li><a style="color: green;" class="a-text" href="./Pages/Career/Career.html">Career</a></li>
-               <li>Portfolio</li>
+               <li style="cursor: pointer;" onclick="window.location='/'" id="about-main">About <span
+                     style="font-size: 0.9rem;">▼</span>
+
+                  <div id="about-div" class="about-div">
+                     <p onclick="ourOrigin(1)">Our Origins</p>
+                     <p onclick="ourOrigin(2)">Our Journey</p>
+                     <p onclick="ourOrigin(3)">Our Portfolio</p>
+                     <p onclick="ourOrigin(4)">Our Team</p>
+                  </div>
+               </li>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a>
+               </li>
+               <li><a class="a-text" href="/Career">Career</a>
+                  <img style="margin:auto;display: block;width: 35px;height: 2px;position: relative;right: 10px;"
+                     src="./assets/Images/Rectangle 1421.png"></img>
+               </li>
+
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
             </ul>
          </div>
          <div class="nav-contact">
-            <button>Contact Us</button>
-            
+            <button style="cursor: pointer;" onclick="window.location='/contact'">Contact Us</button>
+
          </div>
-         <img id="three-line" src="./assets/Designs/3-line.png">
+         <script>
+            function showmobNav() {
+               document.getElementById('mob-navbar').style.display = 'block';
+            }
+            function hidemobNav() {
+               document.getElementById('mob-navbar').style.display = 'none';
+            }
+         </script>
+         <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
+         <div onclick="hidemobNav()" id="mob-navbar" class="mob-navbar">
+            <h2 id="x">X</h2>
+            <ul class="mov-nav-ul">
+               <li ><a style="text-decoration: none;color:white;" href="/">About</a></li>
+               <hr>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li>
+               <hr>
+               <li><a style="color: #106570;text-decoration: none;" href="/Career">Career</a></li>
+               <hr>
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
+               <hr>
+            </ul>
+         </div>
       </nav>
    </div>
 
@@ -48,28 +86,30 @@
    <div class="portfolio-section">
       <h3 id="career-open" class="below-header-container-heading">Portfolio Opening </h3>
       <img id="img-open" style="margin:auto;display: block;" src="./assets/Images/Rectangle 1421.png"></img>
-      
+
       <div class="portfolio-opening">
-            <div class="job-opening-card">
-               <div class="job-post-date-time">
-                  <div class="job-loc">IT · India</div>
-                  <div class="job-date">12-04-2023</div>
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
                </div>
-               <div class="title-dev">
-                  Blockchain Developer
-               </div>
-               <div class="hr">
-                  <hr>
-               </div>
-               <div class="job-desc-container">
-                  <div class="job-desc">
-                     Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
-                  </div>
-                  <div class="apply-btn">
-                     <button>Apply Now</button>
-                  </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
                </div>
             </div>
+         </div>
       </div>
 
 
@@ -88,66 +128,72 @@
             </div>
             <div class="job-desc-container">
                <div class="job-desc">
-                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
                </div>
                <div class="apply-btn">
                   <button>Apply Now</button>
                </div>
             </div>
          </div>
-   </div>
+      </div>
 
 
 
 
-   <div class="portfolio-opening">
-      <div class="job-opening-card">
-         <div class="job-post-date-time">
-            <div class="job-loc">IT · India</div>
-            <div class="job-date">12-04-2023</div>
-         </div>
-         <div class="title-dev">
-            Blockchain Developer
-         </div>
-         <div class="hr">
-            <hr>
-         </div>
-         <div class="job-desc-container">
-            <div class="job-desc">
-               Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
             </div>
-            <div class="apply-btn">
-               <button>Apply Now</button>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
             </div>
          </div>
       </div>
-</div>
 
 
 
 
-<div class="portfolio-opening">
-   <div class="job-opening-card">
-      <div class="job-post-date-time">
-         <div class="job-loc">IT · India</div>
-         <div class="job-date">12-04-2023</div>
-      </div>
-      <div class="title-dev">
-         Blockchain Developer
-      </div>
-      <div class="hr">
-         <hr>
-      </div>
-      <div class="job-desc-container">
-         <div class="job-desc">
-            Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
+            </div>
          </div>
-         <div class="apply-btn">
-            <button>Apply Now</button>
-         </div>
       </div>
-   </div>
-</div>
 
    </div>
 
@@ -159,9 +205,9 @@
 
    <div style="margin-bottom: 150px;" class="portfolio-section">
       <h3 style="margin-top: 70px;" class="below-header-container-heading">Woodstock Opening </h3>
-      <img style="margin:auto;display: block;" src="./assets/Images/Rectangle 1421.png"></img>
-      
-      
+      <img id="img-open" style="margin:auto;display: block;" src="./assets/Images/Rectangle 1421.png"></img>
+
+
       <div class="portfolio-opening">
          <div class="job-opening-card">
             <div class="job-post-date-time">
@@ -176,112 +222,127 @@
             </div>
             <div class="job-desc-container">
                <div class="job-desc">
-                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
                </div>
                <div class="apply-btn">
                   <button>Apply Now</button>
                </div>
             </div>
          </div>
-   </div>
+      </div>
 
 
-   <div class="portfolio-opening">
-      <div class="job-opening-card">
-         <div class="job-post-date-time">
-            <div class="job-loc">IT · India</div>
-            <div class="job-date">12-04-2023</div>
-         </div>
-         <div class="title-dev">
-            Blockchain Developer
-         </div>
-         <div class="hr">
-            <hr>
-         </div>
-         <div class="job-desc-container">
-            <div class="job-desc">
-               Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
             </div>
-            <div class="apply-btn">
-               <button>Apply Now</button>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
             </div>
          </div>
       </div>
-</div>
 
 
-<div class="portfolio-opening">
-   <div class="job-opening-card">
-      <div class="job-post-date-time">
-         <div class="job-loc">IT · India</div>
-         <div class="job-date">12-04-2023</div>
-      </div>
-      <div class="title-dev">
-         Blockchain Developer
-      </div>
-      <div class="hr">
-         <hr>
-      </div>
-      <div class="job-desc-container">
-         <div class="job-desc">
-            Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
+            </div>
          </div>
-         <div class="apply-btn">
-            <button>Apply Now</button>
+      </div>
+      <div class="portfolio-opening">
+         <div class="job-opening-card">
+            <div class="job-post-date-time">
+               <div class="job-loc">IT · India</div>
+               <div class="job-date">12-04-2023</div>
+            </div>
+            <div class="title-dev">
+               Blockchain Developer
+            </div>
+            <div class="hr">
+               <hr>
+            </div>
+            <div class="job-desc-container">
+               <div class="job-desc">
+                  Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The
+                  Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And
+                  Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries,
+               </div>
+               <div class="apply-btn">
+                  <button>Apply Now</button>
+               </div>
+            </div>
          </div>
       </div>
    </div>
-</div>      <div class="portfolio-opening">
-   <div class="job-opening-card">
-      <div class="job-post-date-time">
-         <div class="job-loc">IT · India</div>
-         <div class="job-date">12-04-2023</div>
-      </div>
-      <div class="title-dev">
-         Blockchain Developer
-      </div>
-      <div class="hr">
-         <hr>
-      </div>
-      <div class="job-desc-container">
-         <div class="job-desc">
-            Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry. Lorem Ipsum Has Been The Industry’s Standard Dummy Text Ever Since The 1500S, When An Unknown Printer Took A Galley Of Type And Scrambled It To Make A Type Specimen Book. It Has Survived Not Only Five Centuries, 
-         </div>
-         <div class="apply-btn">
-            <button>Apply Now</button>
+
+
+   <!-- SUBSCRIBE NEWS LETTER -->
+   <div class="subscribe-news-letter">
+      <div class="newletter-container">
+         <div style="margin-top: 7px;" class="news-text">Subscribe to Our Newsletter</div>
+         <div class="input-newsletter">
+            <form>
+               <input id="email-input-subscribe" type="email" placeholder="Enter your email address">
+               <input id="submit-news" type="submit" value="Subscribe">
+            </form>
          </div>
       </div>
    </div>
-</div>
-   </div>
-
-
-  <!-- SUBSCRIBE NEWS LETTER -->
-  <div class="subscribe-news-letter">
-   <div class="newletter-container">
-      <div style="margin-top: 7px;" class="news-text">Subscribe to Our Newsletter</div>
-      <div class="input-newsletter">
-         <form>
-            <input id="email-input-subscribe" type="email" placeholder="Enter your email address">
-            <input id="submit-news" type="submit" value="Subscribe">
-         </form>
+   <div class="final-container">
+      <img src="./assets/Logos/brand.png"></img>
+      <p>The information provided on this website is for educational purposes only and should not be construed to be
+         investment advice or considered to be a recommendation of any particular security, strategy or investment
+         product. No portion of this content should be construed as an offer or solicitation for the purchase or sale of
+         any security or investment. An offering may be made available only to certain sophisticated investors through
+         official delivery of confidential offer documents along with other documents. Readers must understand that past
+         performance is not a guarantee of future results.</p>
+      <div class="social-icons">
+         <a href="#"><img src="./assets/Logos/Icon awesome-linkedin.png"></img></a>
+         <a href="#"><img src="./assets/Logos/Group 9720.png"></img></a>
+         <a href="#"><img src="./assets/Logos/Group 9721.png"></img></a>
+         <a href="#"><img src="./assets/Logos/Icon awesome-twitter-square.png"></img></a>
       </div>
    </div>
-</div>
-<div class="final-container">
-<img src="./assets/Logos/brand.png"></img>
-<p>The information provided on this website is for educational purposes only and should not be construed to be investment advice or considered to be a recommendation of any particular security, strategy or investment product. No portion of this content should be construed as an offer or solicitation for the purchase or sale of any security or investment. An offering may be made available only to certain sophisticated investors through official delivery of confidential offer documents along with other documents. Readers must understand that past performance is not a guarantee of future results.</p>
-<div class="social-icons">
-   <a href="#"><img src="./assets/Logos/Icon awesome-linkedin.png"></img></a>
-   <a href="#"><img src="./assets/Logos/Group 9720.png"></img></a>
-   <a href="#"><img src="./assets/Logos/Group 9721.png"></img></a>
-   <a href="#"><img src="./assets/Logos/Icon awesome-twitter-square.png"></img></a>
-</div>
-</div>
 
 
-<div class="footer">
-READ OUR <a>PRIVACY POLICY</a>, <a>TERMS OF USE</a> AND <a>COOKIE POLICY</a> HERE.
-</div>
+   <div class="footer">
+      READ OUR <a>PRIVACY POLICY</a>, <a>TERMS OF USE</a> AND <a>COOKIE POLICY</a> HERE.
+   </div>
 </body>
-</html>  
+
+</html>

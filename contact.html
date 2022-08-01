@@ -26,21 +26,55 @@
 
     <!-- NAVBAR -->
     <div>
-      <nav style="background-color: #1e181c00;" class="nav">
+      <nav class="nav">
          <div class="logo-div">
-            <img src="./assets/Logos/Mask Group 9.png"></img>
+            <img onclick="window.location='/'" src="./assets/Logos/Mask Group 9.png"></img>
             <ul class="nav-ul">
-               <li style="color: black;">About</li>
-               <li style="color: black;">Blog</li>
-               <li style="color: black;"><a style="color: green;" class="a-text" href="./Pages/Career/Career.html">Career</a></li>
-               <li style="color: black;">Portfolio</li>
+               <li style="cursor: pointer;color: black;" onclick="window.location='/'" id="about-main">About <span
+                     style="font-size: 0.9rem;">▼</span>
+
+                  <div id="about-div" class="about-div">
+                     <p onclick="ourOrigin(1)">Our Origins</p>
+                     <p onclick="ourOrigin(2)">Our Journey</p>
+                     <p onclick="ourOrigin(3)">Our Portfolio</p>
+                     <p onclick="ourOrigin(4)">Our Team</p>
+                  </div>
+               </li>
+               <li><a style="color: black;" class="a-text" href="https://blog.woodstockfund.com/">Blog</a>
+               </li>
+               <li><a style="color: black;" class="a-text" href="/Career">Career</a>
+                  
+               </li>
+
+               <li><a style="color: black;" class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
             </ul>
          </div>
          <div class="nav-contact">
-            <button style="background-color:#1E181C;color:white">Contact Us</button>
-            
+            <button style="cursor: pointer;color: white;background-color: #1E181C;" onclick="window.location='/contact'">Contact Us</button>
+
          </div>
-         <img id="three-line" src="./assets/Designs/3-line.png">
+         <script>
+            function showmobNav() {
+               document.getElementById('mob-navbar').style.display = 'block';
+            }
+            function hidemobNav() {
+               document.getElementById('mob-navbar').style.display = 'none';
+            }
+         </script>
+         <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
+         <div onclick="hidemobNav()" id="mob-navbar" class="mob-navbar">
+            <h2 id="x">X</h2>
+            <ul class="mov-nav-ul">
+               <li ><a style="text-decoration: none;color:white;" href="/">About</a></li>
+               <hr>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li>
+               <hr>
+               <li><a style="color: #ffffff;text-decoration: none;" href="/Career">Career</a></li>
+               <hr>
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
+               <hr>
+            </ul>
+         </div>
       </nav>
    </div>
 

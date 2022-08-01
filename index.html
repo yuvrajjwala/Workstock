@@ -17,16 +17,24 @@
    <div>
       <nav class="nav">
          <div class="logo-div">
-            <img src="./assets/Logos/Mask Group 9.png"></img>
+            <img onclick="window.location='/'" src="./assets/Logos/Mask Group 9.png"></img>
             <ul class="nav-ul">
-               <li>About</li>
-               <li>Blog</li>
-               <li><a class="a-text" href="Career.html">Career</a></li>
-               <li>Portfolio</li>
+               <li onmouseenter="showAbout()" onmouseleave="hideAbout()" id="about-main">About <span style="font-size: 0.9rem;">▼</span>
+                  <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img>
+                  <div id="about-div" class="about-div">
+                     <p onclick="ourOrigin(1)">Our Origins</p>
+                     <p onclick="ourOrigin(2)">Our Journey</p>
+                     <p onclick="ourOrigin(3)">Our Portfolio</p>
+                     <p onclick="ourOrigin(4)">Our Team</p>
+                  </div>
+               </li>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li>
+               <li><a class="a-text" href="/Career">Career</a></li>
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
             </ul>
          </div>
          <div class="nav-contact">
-            <button>Contact Us</button>
+            <button style="cursor: pointer;" onclick="window.location='/contact'">Contact Us</button>
             
          </div>
          <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
@@ -34,9 +42,9 @@
             <h2 id="x">X</h2>
             <ul class="mov-nav-ul">
                <li class="active">About</li><hr>
-               <li>Blog</li><hr>
-               <li><a class="a-text" href="Career.html">Career</a></li><hr>
-               <li>Portfolio</li><hr>
+               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li><hr>
+               <li><a class="a-text" href="/Career">Career</a></li><hr>
+               <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li><hr>
             </ul>
          </div>
       </nav>
@@ -47,6 +55,19 @@
       }
       function hidemobNav(){
          document.getElementById('mob-navbar').style.display='none';
+      }
+      
+      function ourOrigin(a){
+         let element;
+         if(a==1)
+         element='our-origin';
+         else if(a==2)
+         element='our-journey';
+         else if(a==3)
+         element='our-portfolio';
+         else if(a==4)
+         element='our-team';
+         document.getElementById(element).scrollIntoView(true);
       }
    </script>
 
@@ -68,7 +89,7 @@
                <br><br>
                <form>
                   <input id="subscribe" type="email" placeholder="Enter your email to subscribe" >
-                  <button id="subscribe-button"> > </button>
+                  <button id="subscribe-button"> ❯ </button>
                </form>
             </div>
          </div>
@@ -131,7 +152,7 @@
 
 
    <!-- IDEOLOGY CONTAINER -->
-   <div class="ideology-container">
+   <div id="our-origin" class="ideology-container">
       <div class="idology-container-main">
         
          <div class="ideology-text" data-aos="fade-up"data-aos-delay="50"
@@ -178,7 +199,7 @@
 
 
    <!-- PLANT GROW SECTION -->
-   <div class="plant-grow-section">
+   <div id="our-journey" class="plant-grow-section">
       <h3 class="below-header-container-heading">Our Journey</h3>
       <img style="margin:auto;display: block;" src="./assets/Images/Rectangle 1421.png"></img>
 
@@ -289,10 +310,18 @@
          </div>
       </div>
    </div>
+   <script>
+      function showAbout(){
+         document.getElementById('about-div').style.display='block';
+      }
+      function hideAbout(){
+         document.getElementById('about-div').style.display='none';
+      }
+   </script>
 
 <!-- Portfolio -->
 
-   <div class="protfolio-container">
+   <div id="our-portfolio" class="protfolio-container">
       <div data-aos="fade-up"data-aos-delay="50"
       data-aos-duration="2000" class="portfolio-information">
          <h1>Portfolio</h1>
@@ -1179,7 +1208,7 @@
 
 
    <!-- TEAM SECTIOIN -->
-   <div  class="protfolio-container" id="profile-container-id">
+   <div id="our-team"  class="protfolio-container" id="profile-container-id">
       <div class="portfolio-information2">
          <h1>Team</h1>
          <img src="./assets/Images/Rectangle 1421.png"></img>

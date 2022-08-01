@@ -32,6 +32,10 @@ body{
    padding-top: 20px;
    padding-bottom: 20px;
 }
+.nav-ul{
+   overflow: hidden;
+   padding-right: 10px;
+}
 .logo-div{
    display: flex;
 }
@@ -91,6 +95,9 @@ body{
    margin-left: 70px;
    margin-top: 15px;
    color: white;
+}
+.hover-div:hover{
+   transform: scale(1.2);overflow: hidden;
 }
 .nav-contact{
    position: absolute;
@@ -227,6 +234,7 @@ body{
 .a-text{
    text-decoration: none;
    color: white;
+   cursor: pointer;
    
 }
 #origin-wood{
@@ -295,6 +303,20 @@ body{
    opacity: 0.8;
    margin-left: 15px;
    margin-bottom: 23px;
+}
+
+.about-div{
+   padding: 10px;
+   position: absolute;
+   background-color: #106570;
+   
+}
+#about-div{
+   display: none;
+}
+.about-div p{
+   margin: 10px;
+   cursor: pointer;
 }
 
 
@@ -579,12 +601,14 @@ body{
 }
 #email-input-subscribe{
    padding: 7px;
-   border-radius: 15px;
+   border-radius: 8px;
    width: 70%;
    border: none;
 }
 #email-input-subscribe ::placeholder{
    font-size: smaller;
+   font-family: 'izmir1' !important;
+   margin-left: 10px;
 }
 #submit-news{
    background-color: black;
@@ -595,7 +619,9 @@ body{
    border-top-right-radius: 10px;
    position: relative;
    left: -25px;
+   bottom: 1px;
 }
+
 .news-text{
    margin-left: 2%;
    font-weight: bold;
@@ -1291,6 +1317,7 @@ body{
    font-size: 14px;
     color: #ffffffbd;
     text-align: center;
+    font-family: 'izmir1' !important;
 }
 .team-name-details p {
    text-align: center;
@@ -1332,7 +1359,7 @@ body{
    margin-top: 49px;
 }
 .portfolio-information2 p {
-   font-family: 'izmir',sans-serif !important;
+   font-family: 'izmir1',sans-serif !important;
 }
 
 #profile-container-id{
@@ -1407,7 +1434,7 @@ body{
    position: relative;
    left: -25px;
 }
-}
+
 #email-input-subscribe {
    padding: 6px;
    border-radius: 10px;
@@ -1471,4 +1498,12 @@ body{
    #email-input-subscribe {
       width: 100px;
    }
+   #email-input-subscribe {
+      padding: 6px;
+      border-radius: 10px;
+      width: 100px !important;
+      padding-left: 14px;
+      /* padding-bottom: 7px; */
+      border: none;
+  }
  }
