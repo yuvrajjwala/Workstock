@@ -82,6 +82,7 @@ body{
    width: 70%;
    display: block;
    margin: auto;
+   border: 0.2px solid rgba(227, 227, 227, 0.566);
 }
 .logo-div ul li{
    float: left;
@@ -1075,7 +1076,12 @@ body{
    margin: auto;
    text-align:center;
 }
-
+.team-name-details {
+   text-align: center;
+   font-size: small;
+   font-weight: 700;
+   margin-left: 0px;
+}
 .below-header-container-heading {
    font-size: 1.4rem;
    width: 90%;
@@ -1423,7 +1429,7 @@ body{
    font-family: 'izmir1' !important;
 }
 .team-name-details p{
-   max-width: 194px !important;
+   max-width: 165px !important;
 }
 .newletter-container {
    width: 80%;
