@@ -457,12 +457,16 @@ body{
    text-align: center;
    font-size: small;
    font-weight: 700;
+   margin-left: 16px;
 }
 .team-name-details p{
    text-align: center;
    font-size: small;
    font-weight: 700;
+   font-family: 'izmir' !important;
    font-size: 18px;
+   display: block;
+   margin: auto;
 }
 .team-name-details img :nth-child(2){
    width: 20px;
@@ -490,7 +494,7 @@ body{
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   max-width: 1200px;
+   max-width: 1320px;
    color: white;
    margin-top: 50px;
    margin-bottom: 100px;
@@ -632,7 +636,7 @@ body{
    font-family: 'izmir1' !important;
 }
 .hide-mob-text{
-   font-family: 'izmir' !important;
+   font-family: 'izmir1' !important;
    cursor: pointer;
 }
 .illustration-container{
@@ -1383,7 +1387,7 @@ body{
    font-family: 'izmir1' !important;
 }
 .team-name-details p{
-   max-width: 140px !important;
+   max-width: 194px !important;
 }
 .newletter-container {
    width: 80%;
