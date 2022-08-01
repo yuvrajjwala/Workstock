@@ -47,6 +47,42 @@ body{
    right: 7%;
    top: 30px;
 }
+.mob-navbar{
+   width: 100vw;
+   height: 100vh;
+   background-color: #1e181c;
+   top: 0;
+   z-index: 99999;
+   color: white;
+   position: fixed;
+}
+#mob-navbar{
+   display: none;
+}
+#x{
+   color: rgba(255, 255, 255, 0.864);
+   position: absolute;
+   top: 2%;
+   font-size: 2rem;
+   right: 13%;
+}
+.mov-nav-ul{
+   color: white;
+   text-align: center;
+   margin-top: 35%;
+}
+.active{
+   color: #106570;
+}
+.mob-navbar ul li{
+   margin: 25px 5px;
+   font-size: 16px;
+}
+.mob-navbar ul hr{
+   width: 70%;
+   display: block;
+   margin: auto;
+}
 .logo-div ul li{
    float: left;
    text-decoration: none;

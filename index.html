@@ -29,9 +29,26 @@
             <button>Contact Us</button>
             
          </div>
-         <img id="three-line" src="./assets/Designs/3-line.png">
+         <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
+         <div onclick="hidemobNav()" id="mob-navbar" class="mob-navbar">
+            <h2 id="x">X</h2>
+            <ul class="mov-nav-ul">
+               <li class="active">About</li><hr>
+               <li>Blog</li><hr>
+               <li><a class="a-text" href="Career.html">Career</a></li><hr>
+               <li>Portfolio</li><hr>
+            </ul>
+         </div>
       </nav>
    </div>
+   <script>
+      function showmobNav(){
+         document.getElementById('mob-navbar').style.display='block';
+      }
+      function hidemobNav(){
+         document.getElementById('mob-navbar').style.display='none';
+      }
+   </script>
 
    <!-- HEADER SECTION -->
    <div class="header-container">
