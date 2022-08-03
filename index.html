@@ -19,11 +19,11 @@
          <div class="logo-div">
             <img onclick="window.location='/'" src="./assets/Logos/Mask Group 9.png"></img>
             <ul class="nav-ul">
-               <li onmouseenter="showAbout()" onmouseleave="hideAbout()" id="about-main">About <span style="font-size: 0.9rem;">▼</span>
-                  <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img>
+               <li onmouseenter="showAbout()" onmouseleave="hideAbout()" id="about-main">About<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="about-div" class="about-div">
                      <p onclick="ourOrigin(1)">Our Origins</p>
-                     <p onclick="ourOrigin(2)">Our Journey</p>
+                     <p onclick="ourOrigin(2)">Our Journey</p> 
                      <p onclick="ourOrigin(3)">Our Portfolio</p>
                      <p onclick="ourOrigin(4)">Our Team</p>
                   </div>
@@ -69,6 +69,7 @@
          element='our-team';
          document.getElementById(element).scrollIntoView(true);
       }
+
    </script>
 
    <!-- HEADER SECTION -->
@@ -173,10 +174,10 @@
                <div id="text-3" class="text-idology">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident error rem nobis quam.</div>
                <div id="text-4" class="text-idology">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident error rem nobis quam.</div>
                <div class="images-illustration">
-                  <img onmouseover="showIdea(1)" onmouseout="hideIdea(1)" id="des-1" src="./assets/Designs/Component 5 – 9.png">
-                  <img onmouseover="showIdea(2)" onmouseout="hideIdea(2)" id="des-2" src="./assets/Designs/Component 4 – 9.png">
-                  <img onmouseover="showIdea(3)" onmouseout="hideIdea(3)" id="des-3" src="./assets/Designs/Component 3 – 9.png">
-                  <img onmouseover="showIdea(4)" onmouseout="hideIdea(4)" id="des-4" src="./assets/Designs/Component 2 – 9.png">
+                  <img onmouseover="showIdea(1)" onmouseout="hideIdea(1)" id="des-1" src="./assets/Leaf/Group 129.png">
+                  <img onmouseover="showIdea(2)" onmouseout="hideIdea(2)" id="des-2" src="./assets/Leaf/Group 137.png">
+                  <img onmouseover="showIdea(3)" onmouseout="hideIdea(3)" id="des-3" src="./assets/Leaf/Group 127.png">
+                  <img onmouseover="showIdea(4)" onmouseout="hideIdea(4)" id="des-4" src="./assets/Leaf/Group 126.png">
 
                   <p id="color-white" class="show-mob-text">40 years later in 2009, in the aftermath of the global financial crisis, the trust in financial institutions was shaken. This led to the exploration of the intersection of technology & economics, leading to the creation of Bitcoin - first immutable ledger or implementation of a blockchain that created a new class of Digital Assets & Distributed Ledger Technology (DLT) <br><br></p>
             
@@ -227,7 +228,11 @@
             </div>
          </div>
          <div class="plant-img-container">
-            <img src="./assets/Images/Group 10649.png"></img>
+            <!-- <img src="./assets/Images/Group 10649.png"></img> -->
+            <div id="anm-box">
+            </div>
+            <div id="anm-box-side">
+            </div>
          </div>
          <div class="plant-information">
             <div data-aos="zoom-in-left" class="plant-information-information">
@@ -316,6 +321,23 @@
       }
       function hideAbout(){
          document.getElementById('about-div').style.display='none';
+      }
+      window.onscroll = function() {myFunction()};
+
+      function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      // console.log(scrolled)
+      if(scrolled>=25){
+         console.log(parseFloat(scrolled).toFixed(3));
+         document.getElementById('anm-box').style.height=(parseFloat(scrolled).toFixed(1)-25)*60+'px';
+         document.getElementById('anm-box-side').style.height=1200-(parseFloat(scrolled).toFixed(7)-25)*60+'px';
+         // document.getElementById('anm-box').style.height=(1200/(parseInt(scrolled)-25)*60)*100+'%';
+      }
+      else{
+         console.log(scrolled);
+      }
       }
    </script>
 
