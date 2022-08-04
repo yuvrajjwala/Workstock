@@ -14,7 +14,7 @@
 </head>
 <body>
    <!-- NAVBAR -->
-   <div>
+   <div class="nav-div">
       <nav class="nav">
          <div class="logo-div">
             <img onclick="window.location='/'" src="./assets/Logos/Mask Group 9.png"></img>
@@ -28,13 +28,29 @@
                      <p onclick="ourOrigin(4)">Our Team</p>
                   </div>
                </li>
-               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a></li>
+               <li onmouseenter="showBlog()" onmouseleave="hideBlog()" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis</a></p>
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a></p> 
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a></p> 
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog(){
+                        document.getElementById('blog-div').style.display='block';
+                     }
+                     function hideBlog(){
+                        document.getElementById('blog-div').style.display='none';
+                     }
+                  </script>
+               </li>
                <li><a class="a-text" href="/Career">Career</a></li>
                <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
             </ul>
          </div>
          <div class="nav-contact">
-            <button style="cursor: pointer;" onclick="window.location='/contact'">Contact Us</button>
+            <button style="cursor: pointer;color: white;background-color: #106570"  onclick="window.location='/contact'">Contact Us</button>
             
          </div>
          <img onclick="showmobNav()" id="three-line" src="./assets/Designs/3-line.png">
@@ -86,7 +102,7 @@
                <img src="./assets/Images/Group 13.png"></img>
             </div>
             <div class="subscribe-form-up">
-               We are <span style="color:rgba(33,129,102,1)">Thesis and Research</span> driven fund, investing in early stage Distributed Ledger. We Invest in early and growth stage Distributed Ledger Technology (DLT) startups and companies.
+               We are <span style="color:rgba(33,129,102,1);font-weight: 800;font-family: 'izmir-bold';cursor: pointer;"><a onclick="alert('helo')"  style="cursor: pointer;z-index: 9999;color: rgba(33,129,102,1); text-decoration: none;" href="#">Thesis and Research</a></span> driven fund, investing in early stage Distributed Ledger. We Invest in early and growth stage Distributed Ledger Technology (DLT) startups and companies.
                <br><br>
                <form>
                   <input id="subscribe" type="email" placeholder="Enter your email to subscribe" >
@@ -227,11 +243,45 @@
                <h5>Phase 5- Lorem</h5>
             </div>
          </div>
+
+
+         <div class="leave-container">
+            <img id="first-stop" src="./assets/animation/Group 10649.png">
+            <img id="second-stop" src="./assets/animation/Group 10649.png">
+            <img id="three-stop" src="./assets/animation/Group 10649.png">
+            <img id="four-stop" src="./assets/animation/Group 10649.png">
+            
+            <!-- <img src="./assets/animation/Group 130.png"> -->
+            
+         </div>
+
+
          <div class="plant-img-container">
             <!-- <img src="./assets/Images/Group 10649.png"></img> -->
+            
             <div id="anm-box">
             </div>
+            <!-- <div><img id="icon-plant" src="./assets/Logos/Mask Group 9.png"></div> -->
+            <div class="small-image-container">
+               <!-- <div class="upper-leafs">
+                  <img src="./assets/animation/Path 1.png">
+                  <img id="up-two-leaf" src="./assets/animation/Path 2.png">
+               </div> -->
+               
+               <div class="last-leafs">
+                  <img id="zero-leaf" src="./assets/animation/Group 8.png">
+                  <img id="two-leaf" src="./assets/animation/Group 7.png">
+                  <img id="one-leaf" src="./assets/animation/Group 6.png">
+
+               <!-- <img src="./assets/animation/Path 1.png"> -->
+               <!-- <img src="./assets/animation/Path 2.png"> -->
+               <img id="thre-leaf" src="./assets/animation/Path 7.png">
+            </div>
+
+            </div>
+            
             <div id="anm-box-side">
+              
             </div>
          </div>
          <div class="plant-information">
@@ -331,8 +381,43 @@
       // console.log(scrolled)
       if(scrolled>=25){
          console.log(parseFloat(scrolled).toFixed(3));
-         document.getElementById('anm-box').style.height=(parseFloat(scrolled).toFixed(1)-25)*60+'px';
-         document.getElementById('anm-box-side').style.height=1200-(parseFloat(scrolled).toFixed(7)-25)*60+'px';
+
+         if(parseFloat(scrolled).toFixed(3)>28.8){
+               document.getElementById('thre-leaf').style.filter='none';
+               document.getElementById('second-stop').style.filter='none';
+         }else{
+            document.getElementById('thre-leaf').style.filter='grayscale(100%)';
+            document.getElementById('second-stop').style.filter='grayscale(100%)';
+         }
+
+         if(parseFloat(scrolled).toFixed(3)>33.8){
+               document.getElementById('one-leaf').style.filter='none';
+               document.getElementById('three-stop').style.filter='none';
+         }else{
+            document.getElementById('one-leaf').style.filter='grayscale(100%)';
+            document.getElementById('three-stop').style.filter='grayscale(100%)';
+         }
+
+         if(parseFloat(scrolled).toFixed(3)>39.0){
+               document.getElementById('two-leaf').style.filter='none';
+               document.getElementById('four-stop').style.filter='none';
+         }else{
+            document.getElementById('two-leaf').style.filter='grayscale(100%)';
+            document.getElementById('four-stop').style.filter='grayscale(100%)';
+         }
+         if(parseFloat(scrolled).toFixed(3)>44.093){
+               document.getElementById('zero-leaf').style.filter='none';
+         }else{
+            document.getElementById('zero-leaf').style.filter='grayscale(100%)';
+         }
+
+
+         document.getElementById('anm-box').style.height=(parseFloat(scrolled).toFixed(7)-25)*60+'px';
+         if(1200-(parseFloat(scrolled).toFixed(7)-25)*60 <55.55){
+            document.getElementById('anm-box-side').style.height=0; 
+                 }
+         else
+         document.getElementById('anm-box-side').style.height=1090-(parseFloat(scrolled).toFixed(7)-25)*60+'px';
          // document.getElementById('anm-box').style.height=(1200/(parseInt(scrolled)-25)*60)*100+'%';
       }
       else{
@@ -353,7 +438,7 @@
          
       </div>
       <div  id="big-portfolio-img">
-         <img  src="./assets/Images/Mask_Group_10.png"></img>
+         <img style="filter:none"  src="./assets/Images/Mask_Group_10.png"></img>
       </div>
       
    </div>
@@ -407,7 +492,116 @@
          <p onclick="showcompany(5)" class="hide-mob-text">Gaming <img id="companyName05" class="company-border" src="./assets/Images/Rectangle 1421.png"></img></p>
       </div>
 
+      <div id="companyName0" class="company-name">
+         
+         <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/company/Rectangle_57.png"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/company/Rectangle_57.png"><img>
+           
+          </div>
+         
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/Infrastructure/port_near.jpg"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/Infrastructure/port_near.jpg"><img>
+           
+          </div>
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/Infrastructure/port_elrond.jpg"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/Infrastructure/port_elrond.jpg"><img>
+           
+          </div>
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/company/Rectangle_59.png"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/company/Rectangle_59.png"><img>
+           
+          </div>
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/company/Rectangle_70.png"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/company/Rectangle_70.png"><img>
+           
+          </div>
 
+
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/Game/port_snackclub.jpg"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/Game/port_snackclub.jpg"><img>
+           
+          </div>
+
+
+
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/Infrastructure/port_sudrania.jpg"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/Infrastructure/port_sudrania.jpg"><img>
+           
+          </div>
+
+
+
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/company/Rectangle_66.png"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/company/Rectangle_66.png"><img>
+           
+          </div>
+
+
+
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/Infrastructure/port_propine.jpg"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/Infrastructure/port_propine.jpg"><img>
+           
+          </div>
+
+
+          <div class="boxess">
+            <div id="show" class="hover-container">
+               <img class="imge-hover" src="./assets/Infrastructure/port_liminal.jpg"><img>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
+            </div>
+            <img class="imge" src="./assets/Infrastructure/port_liminal.jpg"><img>
+           
+          </div>
+
+          
+
+      </div>
       <div id="companyName1" class="company-name">
          
          <div class="boxess">
@@ -1154,6 +1348,7 @@
       <script>
          function showcompany(a){
             // alert(a)
+            document.getElementById('companyName0').style.display='none';
             for(var i=1;i<=5;i+=1){
                // console.log(`companyName${a}`);
                if(i!=a){
@@ -1238,7 +1433,6 @@
          <p>The collective experience of the Woodstock team spans sectors as diverse as start-ups, conventional financial service and technology development businesses. Together we have built companies grounds up, achieved consumer traction and successfully exited businesses. We possess the ability to identify the right opportunity at the right time. This coupled with an ability to understand the drive and skill required to succeed as an entrepreneur, places us in a unique position to identify opportunities which can offer unique returns.
          </p><br><br>
          <p class="hide-mob-text">At Woodstock, we don’t just invest, we engage and work alongside the teams of our investee companies to create companies of the future, which are scalable and growing within their ecosystems.</p>
-         
       </div>
       <div class="mob-prot-2" id="big-portfolio-img">
          <img src="./assets/Images/Group_51.png"></img>
@@ -1257,6 +1451,8 @@
             <p>Pranav Sharma<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Partner</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
       <div data-aos="zoom-in" class="team-image">
@@ -1265,6 +1461,8 @@
             <p>Himanshu Yadav <br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Partner</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
       <div data-aos="zoom-in" class="team-image">
@@ -1273,6 +1471,8 @@
             <p>Prashanth Swaminathan<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
 
@@ -1282,6 +1482,8 @@
             <p>Adam Mastrelli<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner (US)/span></p>
+               <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
 
@@ -1291,6 +1493,8 @@
             <p>Trrishant Sidhwaani<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
 
@@ -1300,6 +1504,8 @@
             <p>Abhinav Pathak<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Research Partner</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
 
@@ -1309,6 +1515,8 @@
             <p>Srikanth Yeleswarapu<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Head - Technology</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
 
@@ -1318,6 +1526,8 @@
             <p>Indrajeet Sirsikar<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
 
@@ -1327,6 +1537,8 @@
             <p>Shailesh Puthran<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
 
@@ -1336,6 +1548,8 @@
             <p>Rajesh Pathania<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Counsel</span></p>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
       </div>
       </div>
    </div>
@@ -1355,6 +1569,8 @@
                   <p style="max-width: 170px;">David Atkinson<br>
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">Director, Holochain</span></p>
+                  <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
             </div>
             </div>
             <div data-aos="zoom-in" class="team-image">
@@ -1363,6 +1579,8 @@
                   <p style="max-width: 170px;">Nitin Gaur<br>
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">Financial Services Industry<br> with Blockchain and<br> AI, State Street</span></p>
+                  <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
             </div>
             
          
@@ -1385,6 +1603,8 @@
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">CEO, Agora Group
                      (Middle East)</span></p>
+                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
             </div>
             </div>
             <div data-aos="zoom-in" class="team-image">
@@ -1395,6 +1615,8 @@
                   <span class="span-pos-details2">Ex CEO - Birla Sun Life Distribution
                      Senior Director - Investment Consulting - Sun Life Financial
                      (Australia)</span></p>
+                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
             </div>
             
             
@@ -1409,6 +1631,8 @@
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">Co-founder, Nonce
                      (South Korea)</span></p>
+                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
             </div>
             
             
@@ -1423,6 +1647,8 @@
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">President & CFO,
                      Northern Data AG and Board Member, McLaren Technology Acquisition Corp.(UK)</span></p>
+                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
             </div>
             
             
@@ -1452,16 +1678,16 @@
    <img src="./assets/Logos/brand.png"></img>
    <p>The information provided on this website is for educational purposes only and should not be construed to be investment advice or considered to be a recommendation of any particular security, strategy or investment product. No portion of this content should be construed as an offer or solicitation for the purchase or sale of any security or investment. An offering may be made available only to certain sophisticated investors through official delivery of confidential offer documents along with other documents. Readers must understand that past performance is not a guarantee of future results.</p>
    <div class="social-icons">
-      <a href="#"><img src="./assets/Logos/Icon awesome-linkedin.png"></img></a>
-      <a href="#"><img src="./assets/Logos/Group 9720.png"></img></a>
-      <a href="#"><img src="./assets/Logos/Group 9721.png"></img></a>
-      <a href="#"><img src="./assets/Logos/Icon awesome-twitter-square.png"></img></a>
+      <a href="https://www.linkedin.com/company/woodstock-fund/"><img src="./assets/Logos/Icon awesome-linkedin.png"></img></a>
+      <a href="https://www.linkedin.com/company/woodstock-fund/"><img src="./assets/Logos/Group 9720.png"></img></a>
+      <a href="https://woodstockfund.medium.com/"><img src="./assets/Logos/Group 9721.png"></img></a>
+      <a href="https://twitter.com/Woodstockfund"><img src="./assets/Logos/Icon awesome-twitter-square.png"></img></a>
    </div>
 </div>
 
 
 <div class="footer">
-   READ OUR <a>PRIVACY POLICY</a>, <a>TERMS OF USE</a> AND <a>COOKIE POLICY</a> HERE.
+   READ OUR <a href="https://woodstockfund.com/legal.html#section-Privacy">PRIVACY POLICY</a>, <a href="https://woodstockfund.com/legal.html#section-Terms">TERMS OF USE</a> AND <a href="https://woodstockfund.com/legal.html#section-Cookies">COOKIE POLICY</a> HERE.
 </div>
 <!-- aos is here jwala -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

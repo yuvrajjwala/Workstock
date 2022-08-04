@@ -33,7 +33,22 @@
                      <p onclick="ourOrigin(4)">Our Team</p>
                   </div>
                </li>
-               <li><a class="a-text" href="https://blog.woodstockfund.com/">Blog</a>
+               <li onmouseenter="showBlog()" onmouseleave="hideBlog()" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis</a></p>
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a></p> 
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a></p> 
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog(){
+                        document.getElementById('blog-div').style.display='block';
+                     }
+                     function hideBlog(){
+                        document.getElementById('blog-div').style.display='none';
+                     }
+                  </script>
                </li>
                <li><a class="a-text" href="/Career">Career</a>
                   <img style="margin:auto;display: block;width: 35px;height: 2px;position: relative;right: 10px;"
@@ -44,7 +59,7 @@
             </ul>
          </div>
          <div class="nav-contact">
-            <button style="cursor: pointer;" onclick="window.location='/contact'">Contact Us</button>
+            <button style="cursor: pointer;color: white;background-color: #106570"  onclick="window.location='/contact'">Contact Us</button>
 
          </div>
          <script>
@@ -331,17 +346,17 @@
          any security or investment. An offering may be made available only to certain sophisticated investors through
          official delivery of confidential offer documents along with other documents. Readers must understand that past
          performance is not a guarantee of future results.</p>
-      <div class="social-icons">
-         <a href="#"><img src="./assets/Logos/Icon awesome-linkedin.png"></img></a>
-         <a href="#"><img src="./assets/Logos/Group 9720.png"></img></a>
-         <a href="#"><img src="./assets/Logos/Group 9721.png"></img></a>
-         <a href="#"><img src="./assets/Logos/Icon awesome-twitter-square.png"></img></a>
-      </div>
+         <div class="social-icons">
+            <a href="https://www.linkedin.com/company/woodstock-fund/"><img src="./assets/Logos/Icon awesome-linkedin.png"></img></a>
+            <a href="https://www.linkedin.com/company/woodstock-fund/"><img src="./assets/Logos/Group 9720.png"></img></a>
+            <a href="https://woodstockfund.medium.com/"><img src="./assets/Logos/Group 9721.png"></img></a>
+            <a href="https://twitter.com/Woodstockfund"><img src="./assets/Logos/Icon awesome-twitter-square.png"></img></a>
+         </div>
    </div>
 
 
    <div class="footer">
-      READ OUR <a>PRIVACY POLICY</a>, <a>TERMS OF USE</a> AND <a>COOKIE POLICY</a> HERE.
+      READ OUR <a href="https://woodstockfund.com/legal.html#section-Privacy">PRIVACY POLICY</a>, <a href="https://woodstockfund.com/legal.html#section-Terms">TERMS OF USE</a> AND <a href="https://woodstockfund.com/legal.html#section-Cookies">COOKIE POLICY</a> HERE.
    </div>
 </body>
 
