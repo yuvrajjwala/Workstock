@@ -1187,6 +1187,9 @@ body{
    margin-top: 100px;
 
 }
+#woodstock-img{
+   height: 26px;
+}
 
  }
  @media screen and (max-width: 1000px){
@@ -1197,6 +1200,9 @@ body{
  }
 
 @media screen and (max-width: 900px) {
+   #woodstock-img{
+      height: 26px;
+   }
    .show-mob-text{
       display: block;
    }
