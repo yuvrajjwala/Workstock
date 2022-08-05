@@ -31,22 +31,30 @@
          <div class="logo-div">
             <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img>
             <ul class="nav-ul">
-               <li style="cursor: pointer;color: black;" onclick="window.location='/'" id="about-main">About <span
-                     style="font-size: 0.9rem;">▼</span>
-
+               <li style="color: black;cursor: pointer;" onmouseenter="showAbout()" onmouseleave="hideAbout()" id="about-main">About<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="about-div" class="about-div">
-                     <p onclick="ourOrigin(1)">Our Origins</p>
-                     <p onclick="ourOrigin(2)">Our Journey</p>
-                     <p onclick="ourOrigin(3)">Our Portfolio</p>
-                     <p onclick="ourOrigin(4)">Our Team</p>
+                     <p style="position:relative" onclick="ourOrigin(1)">Our Origins
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     
+                     <p onclick="ourOrigin(2)">Our Journey
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> 
+                     <p onclick="ourOrigin(3)">Our Portfolio
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>
+                     <p onclick="ourOrigin(4)">Our Team
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>
                   </div>
                </li>
                <li style="color: black;" onmouseenter="showBlog()" onmouseleave="hideBlog()" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="blog-div" class="about-div">
-                     <p><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis</a></p>
-                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a></p> 
-                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a></p> 
+                     <p><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p>
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
                      <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
                   </div>
                   <script>

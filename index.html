@@ -23,18 +23,27 @@
                <li onmouseenter="showAbout()" onmouseleave="hideAbout()" id="about-main">About<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="about-div" class="about-div">
-                     <p onclick="ourOrigin(1)">Our Origins</p>
-                     <p onclick="ourOrigin(2)">Our Journey</p> 
-                     <p onclick="ourOrigin(3)">Our Portfolio</p>
-                     <p onclick="ourOrigin(4)">Our Team</p>
+                     <p style="position:relative" onclick="ourOrigin(1)">Our Origins
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img>
+                     </p>
+                     
+                     <p onclick="ourOrigin(2)">Our Journey
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> 
+                     <p onclick="ourOrigin(3)">Our Portfolio
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>
+                     <p onclick="ourOrigin(4)">Our Team
+                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>
                   </div>
                </li>
                <li onmouseenter="showBlog()" onmouseleave="hideBlog()" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="blog-div" class="about-div">
-                     <p><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis</a></p>
-                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a></p> 
-                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a></p> 
+                     <p><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p>
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
+                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
                      <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
                   </div>
                   <script>
@@ -103,7 +112,7 @@
                <img src="./assets/Images/Group 13.png"></img>
             </div>
             <div class="subscribe-form-up">
-               We are <span style="color:rgba(33,129,102,1);font-weight: 800;font-family: 'izmir-bold';cursor: pointer;"><a onclick="alert('helo')"  style="cursor: pointer;z-index: 9999;color: rgba(33,129,102,1); text-decoration: none;" href="#">Thesis and Research</a></span> driven fund, investing in early stage Distributed Ledger. We Invest in early and growth stage Distributed Ledger Technology (DLT) startups and companies.
+               We are <span style="color:rgba(33,129,102,1);font-weight: 800;font-family: 'izmir-bold';cursor: pointer;"><a style="cursor: pointer;z-index: 9999;color: rgba(33,129,102,1); text-decoration: none; font-weight: bolder;font-family: 'izmir-bold'; font-size:1.3rem;" href="#">Thesis and Research</a></span> driven fund, investing in early stage Distributed Ledger. We Invest in early and growth stage Distributed Ledger Technology (DLT) startups and companies.
                <br><br>
                <form>
                   <input id="subscribe" type="email" placeholder="Enter your email to subscribe" >
@@ -118,11 +127,11 @@
    </div>
 
    <!-- BELOW HEADER SECTION -->
-   <div  data-aos="zoom-in"data-aos-delay="10"
-   data-aos-duration="500" class="below-header-section">
+   <div class="below-header-section">
       <div class="below-header-container-heading">We work at the intersection of<br> technology and value creation
       </div>
-      <div class="below-header-four-box">
+      <div data-aos="zoom-in"data-aos-delay="10"
+      data-aos-duration="500" class="below-header-four-box">
          <div data-aos="zoom-in"data-aos-delay="10"
          data-aos-duration="500" class="below-header-box">
             <img src="./assets/Images/Group 106.png"></img>
@@ -314,9 +323,53 @@
          </div>
       </div>
       <div class="plant-container-mob">
-         <div class="plant-img-container">
+         <!-- <div class="plant-img-container">
             <img src="./assets/Designs/mob-plant.png"></img>
+         </div> -->
+
+
+
+
+         <div class="leave-container">
+            <img id="first-stop-mob" src="./assets/animation/Group 10649.png">
+            <img id="second-stop-mob" src="./assets/animation/Group 10649.png">
+            <img id="three-stop-mob" src="./assets/animation/Group 10649.png">
+            <img id="four-stop-mob" src="./assets/animation/Group 10649.png">
+            
+            <!-- <img src="./assets/animation/Group 130.png"> -->
+            
          </div>
+
+
+         <div class="plant-img-container">
+            <!-- <img src="./assets/Images/Group 10649.png"></img> -->
+            
+            <div id="anm-box-mob">
+            </div>
+            <!-- <div><img id="icon-plant" src="./assets/Logos/Group 1.png"></div> -->
+            <div class="small-image-container">
+               <!-- <div class="upper-leafs">
+                  <img src="./assets/animation/Path 1.png">
+                  <img id="up-two-leaf" src="./assets/animation/Path 2.png">
+               </div> -->
+               
+               <div class="last-leafs">
+                  <img id="zero-leaf-mob" src="./assets/animation/Group 8.png">
+                  <img id="two-leaf-mob" src="./assets/animation/Group 7.png">
+                  <img id="one-leaf-mob" src="./assets/animation/Group 6.png">
+
+               <!-- <img src="./assets/animation/Path 1.png"> -->
+               <!-- <img src="./assets/animation/Path 2.png"> -->
+               <img id="thre-leaf-mob" src="./assets/animation/Path 7.png">
+            </div>
+
+            </div>
+            
+            <div id="anm-box-side-mob">
+              
+            </div>
+         </div>
+      
          <div class="plant-date-container">
             <div class="plant-information-heading">
                <p>09/02/2016</p>
@@ -381,6 +434,8 @@
       var scrolled = (winScroll / height) * 100;
       // console.log(scrolled)
       if(scrolled>=25){
+         let x = window.innerWidth;
+        
          // console.log(parseFloat(scrolled).toFixed(3));
 
          if(parseFloat(scrolled).toFixed(3)>28.8){
@@ -417,6 +472,44 @@
             document.getElementById('zero-leaf').style.filter='grayscale(100%)';
          }
 
+         console.log(parseFloat(scrolled).toFixed(3))
+         if(parseFloat(scrolled).toFixed(3)>35.5){
+            
+               document.getElementById('thre-leaf-mob').style.filter='none';
+               if(parseFloat(scrolled).toFixed(3)>35.2)
+               {
+                  // console.log('dislpay block hua')
+                  document.getElementById('second-stop-mob').style.display='block';
+               }
+         }else{
+            document.getElementById('thre-leaf-mob').style.filter='grayscale(100%)';
+            if(parseFloat(scrolled).toFixed(3)>35.2)
+            document.getElementById('second-stop-mob').style.display='none';
+         }
+         
+
+         if(parseFloat(scrolled).toFixed(3)>39.1){
+               document.getElementById('one-leaf-mob').style.filter='none';
+               if(parseFloat(scrolled).toFixed(3)>39.1)
+               document.getElementById('three-stop-mob').style.display='block';
+         }else{
+            document.getElementById('one-leaf-mob').style.filter='grayscale(100%)';
+            document.getElementById('three-stop-mob').style.display='none';
+         }
+
+         if(parseFloat(scrolled).toFixed(3)>42.6){
+               document.getElementById('two-leaf-mob').style.filter='none';
+               if(parseFloat(scrolled).toFixed(3)>42.6)
+               document.getElementById('four-stop-mob').style.display='block';
+         }else{
+            document.getElementById('two-leaf-mob').style.filter='grayscale(100%)';
+            document.getElementById('four-stop-mob').style.display='none';
+         }
+         if(parseFloat(scrolled).toFixed(3)>45.5){
+               document.getElementById('zero-leaf-mob').style.filter='none';
+         }else{
+            document.getElementById('zero-leaf-mob').style.filter='grayscale(100%)';
+         }
 
          document.getElementById('anm-box').style.height=(parseFloat(scrolled).toFixed(7)-25)*60+'px';
          if(1200-(parseFloat(scrolled).toFixed(7)-25)*60 <55.55){
@@ -425,11 +518,26 @@
          else
          document.getElementById('anm-box-side').style.height=1090-(parseFloat(scrolled).toFixed(7)-25)*60+'px';
          // document.getElementById('anm-box').style.height=(1200/(parseInt(scrolled)-25)*60)*100+'%';
+
+
+         console.log(scrolled);
+         if(scrolled>=32){
+      
+            if((parseFloat(scrolled).toFixed(7)-32)*70<970)
+               document.getElementById('anm-box-mob').style.height=(parseFloat(scrolled).toFixed(7)-32)*70+'px';
+            if(1250-(parseFloat(scrolled).toFixed(7)-25)*60 <10){
+               document.getElementById('anm-box-side-mob').style.height=0; 
+            }
+            else{
+               // console.log((parseFloat(scrolled).toFixed(7)-32)*70)
+               document.getElementById('anm-box-side-mob').style.height=990-(parseFloat(scrolled).toFixed(7)-32)*70+'px';
+            }
+         }
+        
+      
+      
       }
-      else{
-         // console.log(scrolled);
-      }
-      }
+   }
    </script>
 
 <!-- Portfolio -->
@@ -1667,6 +1775,12 @@
    </div>
       
   </div>
+
+
+
+
+
+  
 
   <!-- SUBSCRIBE NEWS LETTER -->
   <div class="subscribe-news-letter">

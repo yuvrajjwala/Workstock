@@ -103,6 +103,7 @@ body{
    margin-left: 70px;
    margin-top: 15px;
    color: white;
+   cursor: pointer;
 }
 .hover-div:hover{
    transform: scale(1.2);overflow: hidden;
@@ -111,10 +112,14 @@ body{
    position: absolute;
    right: 5%;
    top:35px;
+   overflow: hidden;
 }
 .nav-contact button{
    padding: 10px 20px;
    border: none;
+}
+.nav-contact button:hover{
+   transform: scale(1.05);
 }
 #downarrow{
    width: 8px;
@@ -187,26 +192,31 @@ body{
    margin-left: 20px;
 }
 #subscribe{
-   background-color: #ffffff71;
+   background-color: #087d5c;
    border: none;
    padding: 13px;
    width: 70%;
+   border: 2px solid #087d5c;
    border-radius: 7px;
-   color: #087d5c;
+   color: #ffffff;
    border: 1px solid rgba(109, 109, 109, 0.538);
 }
 #subscribe::placeholder{
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}line
+.line{
+   width: 20px;
 }
 #subscribe-button
 {
    padding: 14px;
    position: relative;
    right: 50px;
-   background-color: #087d5c;
+   background-color: #e8e8e8;
    border: none;
+   font-family: 'izmir1' !important;
    width: 46px;
-   color: white;
+   color: rgb(0, 0, 0);
    border-radius: 7px;
 }
 .below-header-section{
@@ -254,6 +264,10 @@ body{
    margin: auto;
    margin-top: 117px;
 }
+#add-more-btn:hover{
+   font-size: 0.85rem;
+   cursor: pointer;
+}
 
 .a-text{
    text-decoration: none;
@@ -285,6 +299,7 @@ body{
    border-radius: 10px;
    margin-left: 21px;
 }
+
 #anm-box-side{
    background-color:#C0BEC2;
    height: 1200px;
@@ -447,14 +462,30 @@ body{
    display: none;
 }
 .about-div p{
-   margin: 10px;
+   margin: 11px;
    cursor: pointer;
+   display: flex;
+   flex-direction: column;
 }
-.about-div p:hover{
-   color:#106570;
+#border-img{
+   visibility: hidden;
+   height: 2.3px;
+   margin-left: 0px !important;
+   margin-top: 1px;
+   width: 50px;
+   position: relative;
+   
+   
+}
+
+#about-div p:hover > #border-img{
+   visibility: visible !important;
+}
+#blog-div p:hover > #border-img{
+   visibility: visible !important;
 }
 .about-div p a{
-   margin: 10px;
+   margin: 0px;
    cursor: pointer;
    color: black;
 }
@@ -659,12 +690,27 @@ body{
    -webkit-filter: grayscale(100%);
    margin: 30px;
 }
-.img-team:hover{
+
+.team-name-details{
+   /* filter: grayscale(100%);
+   -webkit-filter: grayscale(100%); */
+}
+.team-name-details:hover >.img-team{
    filter: none;
    -webkit-filter: grayscale(0);
-   transform: scale(1.1);
+   transform: scale(1.05);
    transition-duration: 0.5s;
+   overflow: hidden;
 }
+.team-name-details:hover >  #linkedin-img{
+   filter: none;
+   -webkit-filter: grayscale(0);
+   transform: scale(1.05);
+   transition-duration: 0.5s;
+   
+}
+
+
 .team-name-details{
    text-align: center;
    font-size: small;
@@ -732,13 +778,13 @@ body{
    transition-duration: 0.5s;
 }
 .newletter-container{
-   background-color: #106570;
+   background-color: #584c54;
    color: white;
    display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
-   padding: 20px 25px;
-   width: 60%;
+   padding: 20px 5px;
+   width: 40%;
    max-width: 860px;
    border-radius: 15px;
 }
@@ -749,7 +795,7 @@ body{
    justify-content: center;
 }
 .input-newsletter{
-   width: 35%;
+   width: 50%;
 
 }
 #email-input-subscribe{
@@ -764,19 +810,20 @@ body{
    margin-left: 10px;
 }
 #submit-news{
-   background-color: black;
+   background-color: #106570;
    color: white;
+   border: solid #106570;
    padding: 8px;
    font-size: 10px;
    border-bottom-right-radius: 10px;
    border-top-right-radius: 10px;
    position: relative;
    left: -25px;
-   bottom: 1px;
+   bottom: 2px;
 }
 
 .news-text{
-   margin-left: 2%;
+   margin-left: 4%;
    font-weight: bold;
    font-family: 'izmir' !important;
    font-size: 20px;
@@ -973,6 +1020,9 @@ body{
    padding: 7px 30px;
    margin-top: 30px;
 }
+#contact-us-btn:hover{
+   transform: scale(1.01);
+}
 .show-mob-text{
    display: none;
 }
@@ -1145,13 +1195,31 @@ body{
    margin-top: 100px;
 }
 }
+
+@media screen and (max-width: 1620px){
+   .newletter-container{
+      width: 50%;
+   }
+}
 /* MEDIA QUERIES */
 @media screen and (max-width: 1270px){
    #workstock-img {
       height: 22px;
   }
+  #submit-news {
+   background-color: #106570;
+   color: white;
+   border: solid #106570;
+   padding: 8px;
+   font-size: 10px;
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
+   position: relative;
+   left: -25px;
+   bottom: 1px;
+}
    .newletter-container{
-      background-color: #106570;
+      background-color: #584c54;
       color: white;
       display: flex;
       flex-wrap: wrap;
@@ -1452,7 +1520,52 @@ body{
 .plant-img-container {
    position: relative;
    top: 50px;
-   margin: 0px 20px;
+   margin: 0px 0px;
+   margin-right: 7px;
+}
+.leave-container {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 49px;
+   z-index: 1;
+   left: 20px;
+}
+.plant-img-container {
+   position: relative;
+   top: 50px;
+   margin: 0px 0px;
+   margin-right: 7px;
+   left: -20px;
+}
+#zero-leaf-mob{
+   height: 26px;
+   width: 30px;
+   position: relative;
+   position: relative;
+   top: 38px;
+   left: 12px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+#one-leaf-mob{
+   bottom: -9px;
+   filter: grayscale(100%);
+   -webkit-filter: grayscale(100%);
+}
+#two-leaf-mob{
+   bottom: -28px;
+    width: 54px;
+    right: -1px;
+    height: 29px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#one-leaf-mob{
+   height: 21px;
+}
+#thre-leaf-mob{
+   height: 21px;
 }
 .plant-date-container {
    position: relative;
@@ -1614,7 +1727,8 @@ body{
    margin-left: 25px;
 }
 #submit-news {
-   background-color: black;
+   background-color: #106570;
+   border: solid #106570;
    color: white;
    padding: 10px;
    font-size: small;
@@ -1625,6 +1739,7 @@ body{
    border-top-right-radius: 10px;
    position: relative;
    left: -25px;
+   bottom: 2px;
 }
 
 #email-input-subscribe {
@@ -1685,6 +1800,42 @@ body{
       top: -100px;
       visibility: hidden;
    }
+
+
+
+
+
+
+#second-stop-mob, #three-stop-mob, #four-stop-mob {
+   display: none;
+}
+#anm-box-mob{
+   background-color: #087d5c;
+   height: 0px;
+   max-height: 1200px !important;
+   width: 10px;
+   z-index: 99999;
+   border-radius: 10px;
+   margin-left: 21px;
+}
+#anm-box-side-mob{
+   background-color:#C0BEC2;
+   height: 1200px;
+   max-height: 1200px !important;
+   width: 5px;
+   position: relative;
+   left: 2px;
+   margin-left: 22px;
+}
+.leave-container img {
+   width: 33px;
+   margin-bottom: 220px;
+   position: relative;
+}
+
+
+
+
  }
  @media screen and (max-width: 350px){
    #email-input-subscribe {
