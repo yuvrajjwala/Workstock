@@ -170,7 +170,7 @@ body{
 .woodstock-container{
    color: white;
    font-weight: bold;
-   font-family: 'izmir-bold' !important;
+   font-family: 'izmir' !important;
    margin-left: 8%;
    margin-bottom: 50px;
    font-size: 3rem;
@@ -469,7 +469,7 @@ body{
 }
 #border-img{
    visibility: hidden;
-   height: 2.3px;
+   height: 1.5px;
    margin-left: 0px !important;
    margin-top: 1px;
    width: 50px;
@@ -480,6 +480,7 @@ body{
 
 #about-div p:hover > #border-img{
    visibility: visible !important;
+   transition-duration: 0.5s;
 }
 #blog-div p:hover > #border-img{
    visibility: visible !important;
@@ -1125,7 +1126,7 @@ body{
   .woodstock-container {
    color: white;
    font-weight: bold;
-   font-family: 'izmir-bold' !important;
+   font-family: 'izmir' !important;
    margin-left: 8%;
    margin-bottom: 50px;
    font-size: 3.5rem;
@@ -1243,7 +1244,7 @@ body{
   .woodstock-container {
    color: white;
    font-weight: bold;
-   font-family: 'izmir-bold' !important;
+   font-family: 'izmir' !important;
    margin-left: 8%;
    margin-bottom: 50px;
    font-size: 2rem;
