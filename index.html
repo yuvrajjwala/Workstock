@@ -17,7 +17,8 @@
    <div class="nav-div">
       <nav class="nav">
          <div class="logo-div">
-            <img onclick="window.location='/'" src="./assets/Logos/Mask Group 9.png"></img>
+            <!-- <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img> -->
+            <img onclick="window.location='/'" src="./assets/Logos/Group 1.png"></img>
             <ul class="nav-ul">
                <li onmouseenter="showAbout()" onmouseleave="hideAbout()" id="about-main">About<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
@@ -93,7 +94,7 @@
       <img id="semi-up-circle" src="./assets/Images/Ellipse 18.png"></img>
       <div class="left-header-container">
          <div class="woodstock-container">
-            <span id="woodstock" style="color:rgba(33,129,102,1);">Woodstock  </span>
+            <span id="woodstock" style="color:rgba(33,129,102,1);"><img id="woodstock-img" src="./assets/Logos/woodstock-logo.png"></img>  </span>
             is<br>
             an Emerging Tech<br>Investment Firm
          </div>
@@ -261,7 +262,7 @@
             
             <div id="anm-box">
             </div>
-            <!-- <div><img id="icon-plant" src="./assets/Logos/Mask Group 9.png"></div> -->
+            <!-- <div><img id="icon-plant" src="./assets/Logos/Group 1.png"></div> -->
             <div class="small-image-container">
                <!-- <div class="upper-leafs">
                   <img src="./assets/animation/Path 1.png">
@@ -384,26 +385,31 @@
 
          if(parseFloat(scrolled).toFixed(3)>28.8){
                document.getElementById('thre-leaf').style.filter='none';
-               document.getElementById('second-stop').style.filter='none';
+               if(parseFloat(scrolled).toFixed(3)>29.8)
+               document.getElementById('second-stop').style.display='block';
          }else{
             document.getElementById('thre-leaf').style.filter='grayscale(100%)';
-            document.getElementById('second-stop').style.filter='grayscale(100%)';
+            if(parseFloat(scrolled).toFixed(3)>27.8)
+            document.getElementById('second-stop').style.display='none';
          }
+         
 
          if(parseFloat(scrolled).toFixed(3)>33.8){
                document.getElementById('one-leaf').style.filter='none';
-               document.getElementById('three-stop').style.filter='none';
+               if(parseFloat(scrolled).toFixed(3)>34.8)
+               document.getElementById('three-stop').style.display='block';
          }else{
             document.getElementById('one-leaf').style.filter='grayscale(100%)';
-            document.getElementById('three-stop').style.filter='grayscale(100%)';
+            document.getElementById('three-stop').style.display='none';
          }
 
          if(parseFloat(scrolled).toFixed(3)>39.0){
                document.getElementById('two-leaf').style.filter='none';
-               document.getElementById('four-stop').style.filter='none';
+               if(parseFloat(scrolled).toFixed(3)>40.0)
+               document.getElementById('four-stop').style.display='block';
          }else{
             document.getElementById('two-leaf').style.filter='grayscale(100%)';
-            document.getElementById('four-stop').style.filter='grayscale(100%)';
+            document.getElementById('four-stop').style.display='none';
          }
          if(parseFloat(scrolled).toFixed(3)>44.093){
                document.getElementById('zero-leaf').style.filter='none';
@@ -1452,7 +1458,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Partner</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
       <div data-aos="zoom-in" class="team-image">
@@ -1462,7 +1468,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Partner</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
       <div data-aos="zoom-in" class="team-image">
@@ -1472,7 +1478,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
 
@@ -1483,7 +1489,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner (US)/span></p>
                <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
 
@@ -1494,7 +1500,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
 
@@ -1505,7 +1511,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Research Partner</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
 
@@ -1516,7 +1522,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Head - Technology</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
 
@@ -1527,7 +1533,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
 
@@ -1538,7 +1544,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
 
@@ -1549,7 +1555,7 @@
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Counsel</span></p>
             <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img>
       </div>
       </div>
    </div>
@@ -1569,8 +1575,8 @@
                   <p style="max-width: 170px;">David Atkinson<br>
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">Director, Holochain</span></p>
-                  <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+                  <!-- <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img> -->
             </div>
             </div>
             <div data-aos="zoom-in" class="team-image">
@@ -1579,8 +1585,8 @@
                   <p style="max-width: 170px;">Nitin Gaur<br>
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">Financial Services Industry<br> with Blockchain and<br> AI, State Street</span></p>
-                  <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+                  <!-- <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img> -->
             </div>
             
          
@@ -1603,8 +1609,8 @@
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">CEO, Agora Group
                      (Middle East)</span></p>
-                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+                     <!-- <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img> -->
             </div>
             </div>
             <div data-aos="zoom-in" class="team-image">
@@ -1615,8 +1621,8 @@
                   <span class="span-pos-details2">Ex CEO - Birla Sun Life Distribution
                      Senior Director - Investment Consulting - Sun Life Financial
                      (Australia)</span></p>
-                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+                     <!-- <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img> -->
             </div>
             
             
@@ -1631,8 +1637,8 @@
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">Co-founder, Nonce
                      (South Korea)</span></p>
-                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+                     <!-- <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img> -->
             </div>
             
             
@@ -1647,8 +1653,8 @@
                      <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
                   <span class="span-pos-details2">President & CFO,
                      Northern Data AG and Board Member, McLaren Technology Acquisition Corp.(UK)</span></p>
-                     <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/logo-twitter-png-5860.png"></img>
+                     <!-- <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            <img id="linkedin-img" class="our-team-linkedin" src="assets/Logos/twiter.png"></img> -->
             </div>
             
             
