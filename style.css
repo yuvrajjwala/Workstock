@@ -535,6 +535,9 @@ body{
 
    padding-top: 20px;
 }
+#workstock-img{
+   height: 26px;
+}
 
 .boxess{
    overflow: visible;
@@ -1144,6 +1147,9 @@ body{
 }
 /* MEDIA QUERIES */
 @media screen and (max-width: 1270px){
+   #workstock-img {
+      height: 22px;
+  }
    .newletter-container{
       background-color: #106570;
       color: white;
@@ -1200,9 +1206,9 @@ body{
  }
 
 @media screen and (max-width: 900px) {
-   #woodstock-img{
-      height: 26px;
-   }
+   #workstock-img {
+      height: 15px;
+  }
    .show-mob-text{
       display: block;
    }
