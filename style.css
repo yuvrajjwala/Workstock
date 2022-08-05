@@ -1335,13 +1335,25 @@ body{
       padding: 15px;
       margin-top: 30px;
       margin-bottom: 20px;
-      width: 70%;
-  }
+      width: 75%;
+      position: relative;
+      left: 20px;
+  }#subscribe-button {
+   padding: 14px;
+   position: relative;
+   right: 31px;
+   background-color: #e8e8e8;
+   border: none;
+   font-family: 'izmir1' !important;
+   width: 46px;
+   color: rgb(0, 0, 0);
+   border-radius: 7px;
+}
   #subscribe-button{
    padding: 15px;
   }
   #subscribe::placeholder{
-   font-size: 10px;
+   font-size: 12px;
   }
   #small-vertical{
    display: none;
