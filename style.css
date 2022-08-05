@@ -1858,7 +1858,15 @@ body{
       border-radius: 10px;
       width: 100px !important;
       padding-left: 14px;
-      /* padding-bottom: 7px; */
+      
       border: none;
   }
+  #subscribe {
+   padding: 15px;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   width: 65%;
+   position: relative;
+   left: 20px;
+}
  }
