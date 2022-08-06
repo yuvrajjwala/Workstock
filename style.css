@@ -28,9 +28,17 @@ body{
 /* NAVBAR */
 .nav{
    display: flex;
-   width: 100vw;
-   padding-top: 20px;
-   padding-bottom: 20px;
+    width: 100vw;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: visible;
+    left: -35px;
+    margin-right: 290px;
+}
+#img-logo-new{
+   margin-left: 70px;
 }
 .nav-div{
    position: relative;
@@ -43,6 +51,7 @@ body{
 }
 .logo-div{
    display: flex;
+   overflow: hidden;
 }
 .logo-div img{
    margin-left: 50px;
@@ -109,10 +118,14 @@ body{
    transform: scale(1.2);overflow: hidden;
 }
 .nav-contact{
-   position: absolute;
+   /* position: absolute;
    right: 5%;
    top:35px;
+   overflow: hidden; */
    overflow: hidden;
+   margin-left: 70px;
+   position: relative;
+   top: 10px;
 }
 .nav-contact button{
    padding: 10px 20px;
@@ -192,25 +205,25 @@ body{
    margin-left: 20px;
 }
 #subscribe{
-   background-color: #087d5c;
+   background-color: #ffffff;
    border: none;
    padding: 13px;
    width: 70%;
-   border: 2px solid #087d5c;
+   border: 2px solid #ffffff;
    border-radius: 7px;
-   color: #ffffff;
-   border: 1px solid rgba(109, 109, 109, 0.538);
+   color: #000000;
+   border: 2px solid rgba(204, 204, 204, 0.538);
 }
 #subscribe:active{
-   border:1px solid white;
+   border:2px solid rgb(179, 179, 179);
    outline: none;
 }
 #subscribe:focus{
-   border:1px solid white;
+   border:2px solid rgb(208, 208, 208);
    outline: none;
 }
 #subscribe::placeholder{
-   color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
 }line
 .line{
    width: 20px;
@@ -220,11 +233,11 @@ body{
    padding: 14px;
    position: relative;
    right: 50px;
-   background-color: #e8e8e8;
+   background-color: #106570;
    border: none;
    font-family: 'izmir1' !important;
-   width: 46px;
-   color: rgb(0, 0, 0);
+   width: 44px;
+   color: rgb(255, 255, 255);
    border-radius: 7px;
 }
 .below-header-section{
@@ -284,10 +297,9 @@ body{
    
 }
 .a-text:hover{
-   font-size: 17px;
-   position: relative;
-   color: rgb(235, 235, 235);
-   right: 1px;
+   transform: scale(1.2);
+   color: rgb(220, 220, 220);
+   
    
 }
 #origin-wood{
@@ -461,6 +473,7 @@ body{
    color: black;
    /* margin-top: 8px; */
    font-size: 14px;
+   padding-top: 0px;
    
 }
 #blog-div{
@@ -499,16 +512,16 @@ body{
    opacity: 0;
 }
 #about-p{
-   color: #B3BBCE;
+   color: black;
    font-weight: lighter;
 }
 #about-p:hover{
    position: relative;
    font-weight: bolder;
-   color: black;
+   color: #85200C;
    
    position: relative;
-   border-left: 6px solid #106570;
+   border-left: 6px solid #85200C;
    left: -13px;
    transition-duration: 0.3s;
    /* margin-right: -53px; */
@@ -526,7 +539,7 @@ body{
 #about-main:hover > #about-div{
    visibility: visible;
    opacity: 1;
-   height: 160px;
+   height: 114px;
    overflow: hidden;
    transition-duration: 0.8s;
 }
@@ -536,7 +549,7 @@ body{
 .blog-main:hover > #blog-div{
    visibility: visible;
    opacity: 1;
-   height: 125px;
+   height: 117px;
    overflow: hidden;
    transition-duration: 0.8s;
 }
@@ -559,15 +572,15 @@ body{
 .about-div p a{
    margin: 0px;
    cursor: pointer;
-   color: #B3BBCE;
+   color: black;
    font-weight: lighter;
 }
 .about-div p a:hover{
-   color: #000000;
+   color: #85200C;
    font-weight: 600;
 }
 .about-div p:hover{
-   color: #000000;
+   color: #85200C;
    font-weight: 600;
 }
 
@@ -692,7 +705,18 @@ body{
    padding: 5px;
 
  }
+ .img-margin-5px{
+   margin-left: 3px;
+ }
  #linkedin-img{
+   width: 17px;
+   margin-top: 14px;
+   margin-bottom: 10px;
+   /* filter: grayscale(100%);
+   -webkit-filter: grayscale(100%); */
+   cursor: pointer;
+ }
+ #linkedin-img-team{
    width: 17px;
    margin-top: 14px;
    margin-bottom: 10px;
@@ -700,7 +724,8 @@ body{
    -webkit-filter: grayscale(100%);
    cursor: pointer;
  }
- #linkedin-img:hover{
+
+ #linkedin-img-team:hover{
    filter: none;
    -webkit-filter: grayscale(0);
  }
@@ -779,7 +804,7 @@ body{
    transition-duration: 0.5s;
    overflow: hidden;
 }
-.team-name-details:hover >  #linkedin-img{
+.team-name-details:hover >  #linkedin-img-team{
    filter: none;
    -webkit-filter: grayscale(0);
    transform: scale(1.05);
@@ -940,7 +965,7 @@ body{
 }
 .social-icons{
    display: flex;
-   margin-top: 50px;
+   margin-top: 24px;
    margin-bottom: 20px;
    justify-content: center;
 }
@@ -966,7 +991,7 @@ body{
    background-color: #1e181c;
    display: flex;
    justify-content: center;
-   height: 700px;
+   height: 680px;
    margin-top: 70px;
    margin-bottom: 70px;
    
@@ -1182,6 +1207,66 @@ body{
 }
 
 
+
+.quick-link-parent-container{
+   display: flex;
+   justify-content: center;
+   width: 100vw;
+}
+
+.quick-links-container{
+   display: flex;
+   width: 85%;
+   max-width: 1200px;
+}
+#workstock-quick-logo{
+      width: 210px;
+      display: flex;
+      margin: auto;
+      margin-top: 0px;
+}
+#strong{
+   font-weight: bold;
+   font-size: 16px;
+   font-family: 'izmir-bold' !important;
+}
+
+.quick-link-boxes{
+   margin: 30px;
+}
+#one-link{
+   margin-left: 100px;
+}
+
+.quick-link-boxes ul li{
+   margin: 10px 20px;
+   cursor: pointer;
+   font-family: 'izmir1' !important;
+}
+
+.quick-link-boxes ul li a{
+   cursor: pointer;
+   font-family: 'izmir1' !important;
+   text-decoration: none;
+   color: black;
+}
+
+.quick-link-boxes ul li a:hover{
+   font-family: 'izmir' !important;
+}
+
+.quick-link-boxes ul li:hover{
+   font-family: 'izmir' !important;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 1620px) {
    .subscribe-form-up{
       font-size: 1.1rem;
@@ -1206,8 +1291,8 @@ body{
    display: flex;
    justify-content: center;
    height: 87vh;
-   min-height: 700px;
-   max-height: 735px;
+   min-height: 672px;
+   max-height: 700px;
    margin-top: 70px;
    margin-bottom: 70px;
 }
@@ -1364,6 +1449,20 @@ body{
  }
 
 @media screen and (max-width: 900px) {
+   #img-logo-new {
+      margin-left: 5px;
+  }
+  .nav {
+   display: flex;
+   width: 100vw;
+   justify-content: space-between;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   position: relative;
+   overflow: visible;
+   left: 0px;
+   margin-right: 290px;
+}
    #workstock-img {
       height: 15px;
   }
@@ -1425,7 +1524,7 @@ body{
       padding: 15px;
       margin-top: 30px;
       margin-bottom: 20px;
-      width: 75%;
+      width: 72%;
       position: relative;
       left: 20px;
   }#subscribe-button {
@@ -1559,7 +1658,7 @@ body{
    /* margin-top: 60px; */
 }
 .ideology-container{
-   height: 1250px;
+   height: 1145px;
 }
 #contact-us-btn {
    border: none;
@@ -1934,7 +2033,16 @@ background-color: #106570;
    margin-bottom: 220px;
    position: relative;
 }
-
+.quick-links-container {
+   display: flex;
+   width: 85%;
+   max-width: 1200px;
+   justify-content: center;
+}
+.quick-link-boxes {
+   margin: 30px;
+   display: none;
+}
 
 
 
@@ -1959,4 +2067,36 @@ background-color: #106570;
    position: relative;
    left: 20px;
 }
+.team-name-details p {
+   max-width: 147px !important;
+}
+.input-newsletter {
+   width: 100%;
+   margin-top: 12px;
+   display: flex;
+   justify-content: center;
+   margin-left: 19px;
+}
+#email-input-subscribe {
+   padding: 6px;
+   border-radius: 10px;
+   width: 135px !important;
+   padding-left: 14px;
+   border: none;
+}
+ }
+ @media screen and (max-width: 370px){
+   #email-input-subscribe {
+      padding: 6px;
+      border-radius: 10px;
+      width: 100px !important;
+      padding-left: 14px;
+      border: none;
+   }
+   .news-text {
+      margin-left: 2%;
+      font-weight: bold;
+      font-family: 'izmir-bold' !important;
+      font-size: 14px;
+  }
  }
