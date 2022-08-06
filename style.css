@@ -465,21 +465,78 @@ body{
 }
 #blog-div{
    visibility: hidden;
-   opacity: 0;
-}
-#about-div{
+   /* visibility: visible; */
+   /* opacity: 1; */
+   /* opacity: 0; */
+   border-radius: 15px;
+   height: 0px;
+   width: 130px;
    visibility: hidden;
    opacity: 0;
+   /* height: 0px; */
+   /* overflow: hidden;
+   visibility: visible;
+   opacity: 1; */
+   opacity: 0;
+}
+.break-line{
+   height: 0.5px;
+    width: 122%;
+    background: #00000030;
+    position: relative;
+    left: -12px;
+}
+#about-div{
+   border-radius: 15px;
+   
+   width: 130px;
+   visibility: hidden;
+   opacity: 0;
+   height: 0px;
+   /* overflow: hidden;
+   visibility: visible;
+   opacity: 1; */
+   opacity: 0;
+}
+#about-p{
+   color: #B3BBCE;
+   font-weight: lighter;
+}
+#about-p:hover{
+   position: relative;
+   color: black;
+   font-weight: 600;
+   position: relative;
+   border-left: 8px solid #106570;
+   left: -10px;
+   /* margin-right: -53px; */
+  
+   margin: 1px;
+   padding: 10px;
+   padding-left: 12px;
+}
+#side-border{
+   width: 30px;
+   height:30px;
+  
+   background-color: #106570;
 }
 #about-main:hover > #about-div{
    visibility: visible;
    opacity: 1;
-   transition-duration: 1.5s;
+   height: 163px;
+   overflow: hidden;
+   transition-duration: 0.8s;
+}
+#about-main:hover > #about-p{
+   color: black;
 }
 .blog-main:hover > #blog-div{
    visibility: visible;
    opacity: 1;
-   transition-duration: 1.5s;
+   height: 125px;
+   overflow: hidden;
+   transition-duration: 0.8s;
 }
 .about-div p{
    margin: 11px;
@@ -496,24 +553,16 @@ body{
    position: relative;  
 }
 
-#about-div p:hover > #border-img{
-   /* visibility: visible !important; */
-   opacity: 1;
-   transform: scaleX(3);
-   transition-duration: 0.7s;
-}
-#blog-div p:hover > #border-img{
-   opacity: 1;
-   transform: scaleX(3);
-   transition-duration: 0.7s;
-}
+
 .about-div p a{
    margin: 0px;
    cursor: pointer;
-   color: black;
+   color: #B3BBCE;
+   font-weight: lighter;
 }
 .about-div p a:hover{
-   color: #106570;
+   color: #000000;
+   font-weight: 600;
 }
 
 
@@ -801,7 +850,8 @@ body{
    transition-duration: 0.5s;
 }
 .newletter-container{
-   background-color: #584c54;
+   background-color: #1e181c;
+   border: 1px solid #ffffff5c;
    color: white;
    display: flex;
    flex-wrap: wrap;
@@ -1253,7 +1303,8 @@ body{
    bottom: 1px;
 }
    .newletter-container{
-      background-color: #584c54;
+      background-color: #1e181c;
+   border: 1px solid #ffffff5c;
       color: white;
       display: flex;
       flex-wrap: wrap;

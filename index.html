@@ -23,26 +23,29 @@
                <li  id="about-main">About<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="about-div" class="about-div">
-                     <p style="position:relative" onclick="ourOrigin(1)">Our Origins
-                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img>
-                     </p>
-                     
-                     <p onclick="ourOrigin(2)">Our Journey
-                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> 
-                     <p onclick="ourOrigin(3)">Our Portfolio
-                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>
-                     <p onclick="ourOrigin(4)">Our Team
-                        <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>
+                 
+                        <p id="about-p" style="position:relative" onclick="ourOrigin(1)">  Our Origins
+                        
+                           <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img> -->
+                        </p>
+                  
+                     <div class="break-line"></div>
+                     <p id="about-p" onclick="ourOrigin(2)">Our Journey</p><div class="break-line"></div>
+                        <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>  -->
+                     <p id="about-p" onclick="ourOrigin(3)">Our Portfolio</p><div class="break-line"></div>
+                        <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
+                     <p id="about-p" onclick="ourOrigin(4)">Our Team</p>
+                        <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
                   </div>
                </li>
                <li class="blog-main" id="about-main">Blog<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
                   <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
                   <div id="blog-div" class="about-div">
-                     <p><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis </a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p>
-                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a>
-                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
-                     <p> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a>
+                     <p id="about-p"><a style="text-decoration: none;" href="https://blog.woodstockfund.com/#thesis" target="_blank">Thesis </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p><div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#art" target="_blank">Article</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> <div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="https://blog.woodstockfund.com/#pdf" target="_blank">Newsletter</a>
                         <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
                      <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
                   </div>
@@ -103,7 +106,7 @@
       <img id="semi-up-circle" src="./assets/Images/Ellipse 18.png"></img>
       <div class="left-header-container">
          <div class="woodstock-container">
-            <span id="woodstock" style="color:rgba(33,129,102,1);"><img id="woodstock-img" src="./assets/Logos/green-woodstock.png"></img>  </span>
+            <span id="woodstock" style="color:rgba(33,129,102,1);"><img id="woodstock-img" src="./assets/Logos/woodstock-logo.png"></img>  </span>
             is<br>
             an Emerging Tech<br>Investment Firm
          </div>
@@ -1789,7 +1792,8 @@
          <div class="input-newsletter">
             <form>
                <input id="email-input-subscribe" type="email" placeholder="Enter your email address">
-               <input id="submit-news" type="submit" value="Subscribe">
+               <button id="submit-news" type="button" value="Subscribe">Subscribe</button>
+
             </form>
          </div>
       </div>
