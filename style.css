@@ -504,11 +504,13 @@ body{
 }
 #about-p:hover{
    position: relative;
+   font-weight: bolder;
    color: black;
-   font-weight: 600;
+   
    position: relative;
    border-left: 6px solid #106570;
    left: -13px;
+   transition-duration: 0.3s;
    /* margin-right: -53px; */
   
    margin: 1px;
@@ -528,9 +530,9 @@ body{
    overflow: hidden;
    transition-duration: 0.8s;
 }
-#about-main:hover > #about-p{
+/* #about-main:hover > #about-p{
    color: black;
-}
+} */
 .blog-main:hover > #blog-div{
    visibility: visible;
    opacity: 1;
@@ -564,7 +566,10 @@ body{
    color: #000000;
    font-weight: 600;
 }
-
+.about-div p:hover{
+   color: #000000;
+   font-weight: 600;
+}
 
 /* PORTFOLIO */
 .protfolio-container{
