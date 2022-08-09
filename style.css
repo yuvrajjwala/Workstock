@@ -811,13 +811,23 @@ body{
    transition-duration: 0.5s;
    
 }
-
+.team-2-person{
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+#advisor-id{
+   margin-left: 10px;
+    margin-right: 5px;
+}
 
 .team-name-details{
    text-align: center;
    font-size: small;
    font-weight: 700;
-   margin-left: 16px;
+   margin-left: 54px;
+   margin-right: 46px;
 }
 .team-name-details p{
    text-align: center;
@@ -1560,6 +1570,11 @@ body{
    font-size: small;
    font-weight: 700;
    margin-left: 0px;
+   margin-right: 0px;
+}
+#advisor-id{
+   margin-left: 0px;
+    margin-right: 0px;
 }
 .below-header-container-heading {
    font-size: 1.4rem;
