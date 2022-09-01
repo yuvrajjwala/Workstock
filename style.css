@@ -793,10 +793,16 @@ line .line {
 }
 
 .portfolio-heading-names p {
-   font-family: 'izmir1' !important;
+   font-family: 'izmir' !important;
    cursor: pointer;
+   transition-duration: 0.4s;
 }
+.portfolio-heading-names p:hover{
+  color: green;
+  transition-duration: 0.4s;
+ 
 
+}
 .company-name {
    display: flex;
    justify-content: space-evenly;
