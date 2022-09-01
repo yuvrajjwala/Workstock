@@ -14,6 +14,16 @@
    <title>Workstock</title>
 </head>
 <body>
+   <!-- TOPNAVBAR -->
+   <div id="top-nav" class="top-nav">
+      Read our Investment Thesis 2022 <a href="" style="color:white">here</a>
+      <span onclick="hideTopNav()" id="cut-nav">X</span>
+   </div>
+   <script>
+      function hideTopNav(){
+         document.getElementById('top-nav').style.display="none";
+      }
+   </script>
    <!-- NAVBAR -->
    <div class="nav-div">
       <nav class="nav">
@@ -33,6 +43,7 @@
                   
                      <div class="break-line"></div>
                      <p id="about-p" onclick="ourOrigin(2)">Journey</p><div class="break-line"></div>
+                     <p id="about-p" onclick="">Fund Thesis</p><div class="break-line"></div>
                         <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p>  -->
                      <p id="about-p" onclick="ourOrigin(3)">Portfolio</p><div class="break-line"></div>
                         <!-- <img id='border-img' src="./assets/Designs/Path 5831.png"></img></p> -->
@@ -60,7 +71,30 @@
                      }
                   </script>
                </li>
-               <li><a class="a-text" href="/Career">Career</a></li>
+               <li class="blog-main" id="about-main">Career<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p id="about-p"><a style="text-decoration: none;" href="#" target="_blank">Woodstock opening </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p><div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="Career" target="_blank">Portfolio Openings</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
+                     
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog(){
+                        document.getElementById('blog-div').style.display='block';
+                     }
+                     function hideBlog(){
+                        document.getElementById('blog-div').style.display='none';
+                     }
+                  </script>
+               </li>
+               <!-- <li><a class="a-text" href="/Career">Career</a>
+                  <img style="margin:auto;display: block;width: 35px;height: 2px;position: relative;right: 10px;"
+                     src="./assets/Images/Rectangle 1421.png"></img>
+               </li> -->
+               
                <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
             </ul>
 
@@ -112,7 +146,7 @@
          <div class="woodstock-container">
             <span id="woodstock" style="color:rgba(33,129,102,1);"><img id="woodstock-img" src="./assets/Logos/woodstock-logo.png"></img>  </span>
             is<br>
-            an Emerging Tech<br>Investment Firm
+            a Web 3.0<br>Investment Firm
          </div>
          <div class="lower-div-form-header">
             <div id="small-vertical">
@@ -145,9 +179,9 @@
             <br>
             <p id="font-bold" style="font-weight: bold; font-size: 1.12rem;">Infrastructure</p>
             <br>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. </p>
+            <p>Infrastructure layer helps various applications on the blockchain to scale for millions, and soon, billions of users. This decade be focused on composability, interoperability, and consolidation of existing technology for Web 3.0 </p>
             <br>
-            <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+            <!-- <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p> -->
          </div>
          <div data-aos="zoom-in"data-aos-delay="50"
          data-aos-duration="1000" class="below-header-box">
@@ -155,9 +189,9 @@
             <br>
             <p id="font-bold" style="font-weight: bold; font-size: 1.12rem;">Decentralized Finance </p>
             <br>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. </p>
+            <p>Decentralised Finance is an efficient technology than TradFi that can enable a faster and cheaper borderless flow of capital and liquidity, helping onboarding large number of unbanked people and promoting inclusion. </p>
             <br>
-            <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+            <!-- <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p> -->
          </div>
          <div data-aos="zoom-in"data-aos-delay="100"
          data-aos-duration="1500" class="below-header-box">
@@ -165,9 +199,9 @@
             <br>
             <p id="font-bold" style="font-weight: bold; font-size: 1.12rem;">NFT and Tokenization</p>
             <br>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. </p>
+            <p>NFTs and Metaverse will bring immutable ownership, transferability, composability, and programmability to virtual worlds - properties that are impossible in existing (walled) virtual worlds </p>
             <br>
-            <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+            <!-- <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p> -->
          </div>
          <div data-aos="zoom-in"data-aos-delay="150"
          data-aos-duration="2000" class="below-header-box">
@@ -175,9 +209,9 @@
             <br>
             <p id="font-bold" style="font-weight: bold; font-size: 1.12rem;">Web 3.0 Protocols</p>
             <br>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore. </p>
+            <p>Enable smoother rails to be built between the Web 3.0 stack, the traditional stack (horizontal and vertical), and the emerging technologies stack (newer or incremental paradigms) to create the best user-centric solutions.</p>
             <br>
-            <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p>
+            <!-- <p class="hide-mob-text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore.</p> -->
          </div>
          
       </div>
@@ -207,10 +241,12 @@
                <div id="text-3" class="text-idology">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident error rem nobis quam.</div>
                <div id="text-4" class="text-idology">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse provident error rem nobis quam.</div>
                <div class="images-illustration">
-                  <img onmouseover="showIdea(1)" onmouseout="hideIdea(1)" id="des-1" src="./assets/Leaf/Group 129.png">
+                  <!-- <img onmouseover="showIdea(1)" onmouseout="hideIdea(1)" id="des-1" src="./assets/Leaf/Group 129.png">
                   <img onmouseover="showIdea(2)" onmouseout="hideIdea(2)" id="des-2" src="./assets/Leaf/Group 137.png">
                   <img onmouseover="showIdea(3)" onmouseout="hideIdea(3)" id="des-3" src="./assets/Leaf/Group 127.png">
-                  <img onmouseover="showIdea(4)" onmouseout="hideIdea(4)" id="des-4" src="./assets/Leaf/Group 126.png">
+                  <img onmouseover="showIdea(4)" onmouseout="hideIdea(4)" id="des-4" src="./assets/Leaf/Group 126.png">  -->
+                  <img onmouseover="showIdea(5)" onmouseout="hideIdea(5)" id="des-5" src="./assets/Leaf/all-leaf.png">
+                  
 
                   <p id="color-white" class="show-mob-text">40 years later in 2009, in the aftermath of the global financial crisis, the trust in financial institutions was shaken. This led to the exploration of the intersection of technology & economics, leading to the creation of Bitcoin - first immutable ledger or implementation of a blockchain that created a new class of Digital Assets & Distributed Ledger Technology (DLT) <br><br></p>
             
@@ -240,24 +276,24 @@
       <div class="plant-container">
          <div class="plant-date-container">
             <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 1- Lorem</h5>
+               <!-- <p>09/02/2016</p> -->
+               <h5>Vision/h5>
             </div>
             <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 2- Lorem</h5>
+               <!-- <p>09/02/2016</p> -->
+               <h5>Mission</h5>
             </div>
             <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 3- Lorem</h5>
+               <!-- <p>09/02/2016</p> -->
+               <h5>Values</h5>
             </div>
             <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 4- Lorem</h5>
+               <!-- <p>09/02/2016</p> -->
+               <h5>Philosophy</h5>
             </div>
             <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 5- Lorem</h5>
+               <!-- <p>09/02/2016</p> -->
+               <h5>Who we are</h5>
             </div>
          </div>
 
@@ -303,29 +339,25 @@
          </div>
          <div class="plant-information">
             <div data-aos="zoom-in-left" class="plant-information-information">
-               <p>-Lorem ipsum dolor sit amet, consetetur <br></p>    
-               <p>-Lorem ipsum dolor sit amet<br> </p> 
-               <p>-Lorem ipsum dolor sit amet. Con<br></p>  
+               <p>To be the Web 3.0 leader in east west corridor<br></p>    
+               <!-- <p>-Lorem ipsum dolor sit amet<br> </p> 
+               <p>-Lorem ipsum dolor sit amet. Con<br></p>   -->
             </div>
             <div data-aos="zoom-in-left" class="plant-information-information">
-                <p>-Lorem ipsum dolor sit amet, consetetur <br></p>    
-               <p>-Lorem ipsum dolor sit amet<br> </p> 
-               <p>-Lorem ipsum dolor sit amet. Con<br></p>
+                <p>To compassionately help build an equitable future by investing in Web 3.0</p>    
+            
             </div>
-            <div data-aos="zoom-in-left" class="plant-information-information">
-                <p>-Lorem ipsum dolor sit amet, consetetur <br></p>    
-               <p>-Lorem ipsum dolor sit amet<br> </p> 
-               <p>-Lorem ipsum dolor sit amet. Con<br></p>
+            <div data-aos="zoom-in-left" class="plant-information-information" id="plant-information-3th">
+                <p>Integrity | Collaborative | Openness</p>    
+               
             </div>
-            <div data-aos="zoom-in-left" class="plant-information-information">
-                <p>-Lorem ipsum dolor sit amet, consetetur <br></p>    
-               <p>-Lorem ipsum dolor sit amet<br> </p> 
-               <p>-Lorem ipsum dolor sit amet. Con<br></p>
+            <div data-aos="zoom-in-left" class="plant-information-information" id="plant-information-4th">
+                <p>Woodstock's core philosophy and values are driven by 2 principles - Inclusion and Expression. We believe next billion users in Web 3.0 will be driven by 3 megatrends - Convergence, Financialisation and Virtualisation. <br></p>    
+              
             </div>
-            <div data-aos="zoom-in-left" class="plant-information-information">
-                <p>-Lorem ipsum dolor sit amet, consetetur <br></p>    
-               <p>-Lorem ipsum dolor sit amet<br> </p> 
-               <p>-Lorem ipsum dolor sit amet. Con<br></p>
+            <div data-aos="zoom-in-left" class="plant-information-information" id="plant-information-5th">
+                <p>Woodstock is one of the largest and oldest Web 3.0 focussed fund out of India, investing in Blockchain and Distributed Ledger Technology (DLT). We aim to build an east-west corridor and connect the eastern Web 3.0 ecosystem to the western capital and vice versa. We invest across the Web 3.0 technology stack – Infrastructure, Decentralized Finance, NFTs, and Web 3.0. At Woodstock early-stage investments are made behind passionate and forward-thinking entrepreneurs, while positions in listed assets are taken based on fundamental analysis and token utility.</p>    
+             
             </div>
          </div>
       </div>
@@ -379,48 +411,43 @@
       
          <div class="plant-date-container">
             <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 1- Lorem</h5>
+               <!-- <p>09/02/2016</p> -->
+               <h5>Vision</h5>
                <div data-aos="zoom-in-left" class="plant-information-information">
-                  <p>-Lorem ipsum dolor sit amet, consetetur </p>    
-                  <p>-Lorem ipsum dolor sit amet </p> 
-                  <p>-Lorem ipsum dolor sit amet. Con</p>  
+                  <p>To be the Web 3.0 leader in east west corridor </p>    
+                
                </div>
             </div>
             <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 2- Lorem</h5>
+               <!-- <p>09/02/2016</p> -->
+               <h5>Mission</h5>
                <div data-aos="zoom-in-left" class="plant-information-information">
-                  <p>-Lorem ipsum dolor sit amet, consetetur </p>    
-                  <p>-Lorem ipsum dolor sit amet </p> 
-                  <p>-Lorem ipsum dolor sit amet. Con</p>  
+                  <p>To compassionately help build an equitable future by investing in Web 3.0</p>    
+                  
                </div>
             </div>
-            <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 3- Lorem</h5>
-               <div data-aos="zoom-in-left" class="plant-information-information">
-                  <p>-Lorem ipsum dolor sit amet, consetetur</p>    
-                  <p>-Lorem ipsum dolor sit amet </p> 
-                  <p>-Lorem ipsum dolor sit amet. Con</p>  
+            <div class="plant-information-heading" id="mob-plantinform-3">
+               <!-- <p>09/02/2016</p> -->
+               <h5>Values</h5>
+               <div data-aos="zoom-in-left" class="plant-information-information" id="mob-plantinform-33" >
+                  <p>Integrity | Collaborative | Openness</p>    
+                 
                </div>
             </div>
-            <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 4- Lorem</h5>
-               <div data-aos="zoom-in-left" class="plant-information-information">
-                  <p>-Lorem ipsum dolor sit amet, consetetur </p>    
-                  <p>-Lorem ipsum dolor sit amet </p> 
-                  <p>-Lorem ipsum dolor sit amet. Con</p>  
+            <div class="plant-information-heading" id="mob-plantinform-4">
+               <!-- <p>09/02/2016</p> -->
+               <h5>Philosophy</h5>
+               <div data-aos="zoom-in-left" class="plant-information-information" id="mob-plantinform-44">
+                  <p>Woodstock's core philosophy and values are driven by 2 principles - Inclusion and Expression. We believe next billion users in Web 3.0 will be driven by 3 megatrends - Convergence, Financialisation and Virtualisation. </p>    
+               
                </div>
             </div>
-            <div class="plant-information-heading">
-               <p>09/02/2016</p>
-               <h5>Phase 5- Lorem</h5>
-               <div data-aos="zoom-in-left" class="plant-information-information">
-                  <p>-Lorem ipsum dolor sit amet, consetetur </p>    
-                  <p>-Lorem ipsum dolor sit amet </p> 
-                  <p>-Lorem ipsum dolor sit amet. Con</p>  
+            <div class="plant-information-heading" id="mob-plantinform-5">
+               <!-- <p>09/02/2016</p> -->
+               <h5>Who we are</h5>
+               <div data-aos="zoom-in-left" class="plant-information-information" id="mob-plantinform-55" >
+                  <p>Woodstock is one of the largest and oldest Web 3.0 focussed fund out of India, investing in Blockchain and Distributed Ledger Technology (DLT). We aim to build an east-west corridor and connect the eastern Web 3.0 ecosystem to the western capital and vice versa. We invest across the Web 3.0 technology stack – Infrastructure, Decentralized Finance, NFTs, and Web 3.0. At Woodstock early-stage investments are made behind passionate and forward-thinking entrepreneurs, while positions in listed assets are taken based on fundamental analysis and token utility. </p>    
+                 
                </div>
             </div>
          </div>
@@ -614,13 +641,15 @@
       </div>
 
       <div id="companyName0" class="company-name">
-         
+         <script>
+            
+         </script>
          <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_57.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Covalent is a real-time data provider of blockchain transaction data, and provides a unified API to bring full transparency and visibility to assets across all blockchain networks. <br>
+             <a href=" https://www.linkedin.com/company/covalenthq/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/covalent_hq " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
               
             </div>
             <img class="imge" src="./assets/company/Rectangle_57.png"><img>
@@ -630,9 +659,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_near.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               NEAR Protocol (or NEAR) is a Proof-of-Stake (PoS) based blockchain and a decentralized application platform. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_near.jpg"><img>
            
@@ -640,9 +669,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_elrond.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               With its novel adaptive state sharding approach at Layer 1, Elrond brings a 1000x improvement in throughput and execution speed. <br>
+              <a href="https://www.linkedin.com/company/elrondnetwork/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/ElrondNetwork" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_elrond.jpg"><img>
            
@@ -650,9 +679,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_59.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Biconomy enables developers to integrate a wrapper around transactions and provide quick and gas optimized transactions to the end-user via their transaction management system and relayer infrastructure.  <br>
+              <a href="https://www.linkedin.com/company/biconomy/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/biconomy " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_59.png"><img>
            
@@ -660,9 +689,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_70.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Bware Labs provides blockchain APIs to various developers and helps node operators by providing integrated payment options and verified reliability. <br>
+              <a href="https://www.linkedin.com/company/bwarelabs/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/BwareLabs" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_70.png"><img>
            
@@ -672,9 +701,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Game/port_snackclub.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Snack Club is a gaming guild and management platform operated by Loud Esports <br>
+              <a href="https://www.linkedin.com/company/snackclubgg" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/SNACKCLUBgg" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_snackclub.jpg"><img>
            
@@ -685,9 +714,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_sudrania.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Formidium is a multi-asset capable fund administrator and global leader in revolutionizing the back office for digital assets through specialized, cloud-based technology and automation. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_sudrania.jpg"><img>
            
@@ -698,9 +727,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_66.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Moralis simplifies the back end development required and provides developers with a Software Development Kit (SDK) that can be used to start building scalable and efficient dApps easily with simple snippets of code and deploy those dApps using Moralis without having to host a server <br>
+              <a href="https://twitter.com/MoralisWeb3" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://www.linkedin.com/company/moralisweb3/" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_66.png"><img>
            
@@ -711,9 +740,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_propine.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Propine is a regulated and ICO-27001 certified end-to-end digital securities services platform for institutions. <br>
+              <a href="https://www.linkedin.com/company/propine/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/PropineGlobal" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_propine.jpg"><img>
            
@@ -723,9 +752,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_liminal.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Liminal provides simple and highly secure digital asset self-custody solutions for all users. <br>
+              <a href="https://www.linkedin.com/company/lmnlhq/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/LmnlHQ" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_liminal.jpg"><img>
            
@@ -739,9 +768,9 @@
          <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_elrond.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               With its novel adaptive state sharding approach at Layer 1, Elrond brings a 1000x improvement in throughput and execution speed. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_elrond.jpg"><img>
            
@@ -750,9 +779,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_casper.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Casper Labs is building a fully decentralized, sharded and scalable next-generation blockchain, implementing CBC Casper proof-of-stake protocol. <br>
+              <a href="https://www.linkedin.com/company/casperlabs/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/Casper_Network " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_casper.jpg"><img>
            
@@ -760,9 +789,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure//port_near.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               NEAR Protocol (or NEAR) is a Proof-of-Stake (PoS) based blockchain and a decentralized application platform. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure//port_near.jpg"><img>
            
@@ -770,9 +799,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_adaptive.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Adaptive holdings raised $14.5 Mn for Casper Labs. It is the parent company and holds a 10% stake in Casper Labs. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="assets/Infrastructure/port_adaptive.jpg"><img>
            
@@ -780,9 +809,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_ngrave.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               NGRAVE is the coldest hardware wallet developed for digital assets with strong research roots in cryptography and cybersecurity. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_ngrave.jpg"><img>
            
@@ -792,9 +821,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_propine.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Propine is a regulated and ICO-27001 certified end-to-end digital securities services platform for institutions. <br>
+              <a href="https://www.linkedin.com/company/propine/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/PropineGlobal" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_propine.jpg"><img>
            
@@ -805,9 +834,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_sudrania.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Formidium is a multi-asset capable fund administrator and global leader in revolutionizing the back office for digital assets through specialized, cloud-based technology and automation. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_sudrania.jpg"><img>
            
@@ -818,9 +847,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_vesta.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Vesta Equity is building a global home equity platform with the tools and marketplace to transact digitally and connect property owners and property investors directly. <br>
+              <a href="https://www.linkedin.com/company/vestaequityvpm/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/vestaequityvpm" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_vesta.jpg"><img>
            
@@ -831,9 +860,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_liminal.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Liminal provides simple and highly secure digital asset self-custody solutions for all users. <br>
+              <a href="https://www.linkedin.com/company/lmnlhq/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/LmnlHQ" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_liminal.jpg"><img>
            
@@ -843,9 +872,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Infrastructure/port_coinmara.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               CoinMARA is building a pan-African digital asset exchange and lending platform. <br>
+              <a href="https://www.linkedin.com/company/covalenthq/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/covalent_hq" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Infrastructure/port_coinmara.jpg"><img>
            
@@ -860,9 +889,9 @@
          <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_57.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Covalent is a real-time data provider of blockchain transaction data, and provides a unified API to bring full transparency and visibility to assets across all blockchain networks. <br>
+              <a href="https://www.linkedin.com/company/band-protocol/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/BandProtocol" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_57.png"><img>
            
@@ -874,9 +903,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_58.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Band is a protocol for managing and governing data in the Web3 technology stack, which provides reliable datasets for enterprises, developers and communities. <br>
+              <a href="https://www.linkedin.com/company/biconomy/" target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/biconomy" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_58.png"><img>
            
@@ -888,9 +917,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_59.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Biconomy enables developers to integrate a wrapper around transactions and provide quick and gas optimized transactions to the end-user via their transaction management system and relayer infrastructure <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_59.png"><img>
            
@@ -906,9 +935,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_60.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Marlin is a Layer-0 scaling solution for public blockchains bringing private network like performance on the public Internet. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_60.png"><img>
            
@@ -920,9 +949,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_61.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Cere Network is a blockchain-based Customer Relationship Management (CRM) and Customer Data Platform (CDP) ecosystem, that focuses on privacy, security and interoperability. <br>
+              <a href="https://www.linkedin.com/company/cere-network/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/cerenetwork " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_61.png"><img>
            
@@ -934,9 +963,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_62.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Unmarshal transforms raw and unstructured blockchain data into meaningful information. It is a decentralized network of blockchain data indexers and transforming tools to power dApps on any chain <br>
+              <a href="https://www.linkedin.com/company/unmarshal-io/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/unmarshal" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_62.png"><img>
            
@@ -951,9 +980,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_63.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Block Wallet is a private, non-custodial Ethereum browser wallet. By deploying cryptographic methods and fund pooling, Block Wallet ensures that no malicious actor can link withdrawals to deposits <br>
+              <a href="https://www.linkedin.com/company/block-wallet/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/GetBlockWallet " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_63.png"><img>
            
@@ -965,9 +994,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_64.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Sentinel is a peer-to-peer bandwidth marketplace, a base layer protocol for companies and projects to build dVPN offerings on top of it. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_64.png"><img>
            
@@ -979,9 +1008,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_65.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Transparent, trusted, and tradable. Nayms introduces the Insurance-Linked Smart Contract to conduct efficient cover for the world of digital assets. <br>
+              <a href="https://www.linkedin.com/company/nayms/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" https://twitter.com/Nayms_io" target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_65.png"><img>
            
@@ -995,9 +1024,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_66.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Moralis simplifies the back end development required and provides developers with a Software Development Kit (SDK) that can be used to start building scalable and efficient dApps easily with simple snippets of code and deploy those dApps using Moralis without having to host a server <br>
+              <a href="https://twitter.com/MoralisWeb3 " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://www.linkedin.com/company/moralisweb3/ " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_66.png"><img>
            
@@ -1009,9 +1038,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_67.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Polygen is building a decentralized launchpad for the Polygon ecosystem - a permissionless way to list projects at fair value. <br>
+              <a href="https://www.linkedin.com/company/polygen-launchpad/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/Polygen_io " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_67.png"><img>
            
@@ -1023,9 +1052,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_68.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Decentralised storage, identity, access management and key management services to help developers build secure and privacy-preserving apps. <br>
+              <a href="https://www.linkedin.com/company/arcana-network/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/ArcanaNetwork " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_68.png"><img>
            
@@ -1036,9 +1065,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_68.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Decentralised storage, identity, access management and key management services to help developers build secure and privacy-preserving apps. <br>
+              <a href="https://www.linkedin.com/company/arcana-network/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/ArcanaNetwork " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_68.png"><img>
            
@@ -1048,9 +1077,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_69.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Safle is a decentralized multi-chain interoperable wallet and node infrastructure. <br>
+              <a href="https://www.linkedin.com/company/get-safle/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/GetSafle " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_69.png"><img>
            
@@ -1059,9 +1088,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_70.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Bware Labs provides blockchain APIs to various developers and helps node operators by providing integrated payment options and verified reliability. <br>
+              <a href="https://www.linkedin.com/company/bwarelabs/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_70.png"><img>
            
@@ -1071,9 +1100,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_71.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Tea aims to become the app store equivalent at the command line level for various open-source developers by building a package manager and a GUI app store for web3 development. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_71.png"><img>
            
@@ -1083,9 +1112,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_72.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Itheum is a decentralized data brokerage platform that transforms personal data into a highly tradable asset class. <br>
+              <a href="https://www.linkedin.com/company/itheum/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/itheum " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_72.png"><img>
            
@@ -1095,9 +1124,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_73.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Router Protocol is a cross-chain liquidity protocol that facilitates the seamless flow of liquidity across blockchains. <br>
+              <a href="https://www.linkedin.com/company/router-protocol/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/routerprotocol " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_73.png"><img>
            
@@ -1106,9 +1135,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/company/Rectangle_74.png"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               EPNS is a protocol for blockchain-based notifications that are chain agnostic, platform-independent, and incentivized. <br>
+              <a href="https://www.linkedin.com/company/ethernity-chain/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/EthernityChain  " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/company/Rectangle_74.png"><img>
            
@@ -1134,9 +1163,9 @@
          <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_ethernity.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Ethernity Chain is a platform that offers limited-edition authenticated Non-Fungible Tokens (NFTs) and trading cards that are created by popular artists and endorsed by celebrities. <br>
+              <a href="https://www.linkedin.com/company/ethernity-chain/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/EthernityChain " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_ethernity.jpg"><img>
            
@@ -1146,9 +1175,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_fantiger.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Fan Tiger is a decentralized music label that powers the artist-fan community using NFTs. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_fantiger.jpg"><img>
            
@@ -1159,9 +1188,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_holoride.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               A platform that takes an everyday journey and transforms it into a hyper-immersive experience for the passenger by combining navigational and car data with extended reality. <br>
+              <a href="https://www.linkedin.com/company/holoride/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/holoride " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_holoride.jpg"><img>
            
@@ -1172,9 +1201,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_Ikonz.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Ikonz is a metaverse company that helps IP owners, artists and other established icons manage their digital assets. <br>
+              <a href="https://www.linkedin.com/company/ikonzclub/about/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/ikonz_club " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_Ikonz.jpg"><img>
            
@@ -1185,9 +1214,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_metasky.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               MetaSky provides no-code NFT collection generation. They are building a custodial wallet and will have integrated a fiat on-ramp. <br>
+              <a href="https://www.linkedin.com/company/metasky-hq/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/Metasky_HQ " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_metasky.jpg"><img>
            
@@ -1198,9 +1227,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_mintbase.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Mintbase is a marketplace that allows users to create and trade digital assets via unique cryptographic tokens (NFTs). <br>
+              <a href="https://www.linkedin.com/company/mintbase/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/mintbase " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_mintbase.jpg"><img>
            
@@ -1211,9 +1240,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_roundlabs.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Round Finance is developing an app for users to engage in competitive arcade games on top of blockchain networks. The arcade will have an in-built non-custodial digital asset wallet. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_roundlabs.jpg"><img>
            
@@ -1225,9 +1254,10 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_superfarm.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               SuperFarm is a cross-chain DeFi protocol that allows any token ecosystem to generate utility by turning it into an NFT farm. It has a suite of visual tools that can be used to deploy a new NFT farm without any coding.
+ <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_superfarm.jpg"><img>
            
@@ -1238,9 +1268,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_terra.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Terra Virtua is an immersive collectible platform across Mobile, AR and VR with unique social, gaming and creative experiences, enabled by blockchain. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_terra.jpg"><img>
            
@@ -1252,9 +1282,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/NFT/port_wall.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Wall is a platform where creators can mint digital assets (art, music, GIFs, video, text, etc) as NFTs which their fans can bid on and buy. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/NFT/port_wall.jpg"><img>
            
@@ -1269,9 +1299,9 @@
          <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_benqi.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               BenQi is the first liquidity market protocol that is launching natively on Avalanche blockchain. It allows users to effortlessly lend, borrow, and earn interest with their digital assets in a non-custodial way <br>
+              <a href="https://www.linkedin.com/company/benqi/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/BenqiFinance " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_benqi.jpg"><img>
            
@@ -1281,9 +1311,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_dexalot.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Dexalot is an on-chain exchange aiming at bringing the traditional centralized exchange user experience without compromising on decentralization and transparency. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/dexalotcom " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_dexalot.jpg"><img>
            
@@ -1294,9 +1324,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_dexguru.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               DexGuru combines advanced analytics and research tools with powerful trade execution capabilities to help you analyze permissionless, real-time data for every on-chain market — all in one fully-integrated UI. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_dexguru.jpg"><img>
            
@@ -1307,9 +1337,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_frontier.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Frontier is a blockchain-agnostic DeFi management & aggregation layer supporting Ethereum, Cosmos, Binance Chain and more. <br>
+              <a href="https://www.linkedin.com/company/frontierdotxyz/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/FrontierDotXYZ " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_frontier.jpg"><img>
            
@@ -1320,9 +1350,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_ichi.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               ICHI provides a decentralised monetary authority that can mint and govern capital-efficient stablecoins. <br>
+              <a href="https://www.linkedin.com/company/ichi-foundation/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/ichifoundation " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_ichi.jpg"><img>
            
@@ -1333,9 +1363,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_levana.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Levana is a leveraged decentralized exchange (DEX) built on the Terra blockchain and collateralized by the UST stablecoin. It enables traders to access the leverage they are used to in Traditional Finance (TradFi), in a permissionless, transparent and scalable manner. <br>
+              <a href="https://www.linkedin.com/company/levana-protocol/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/Levana_protocol " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_levana.jpg"><img>
            
@@ -1346,9 +1376,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_mesh.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Mesh Finance is a community of traders, developers, and finance people that plans to build multiple structured products to help users access DeFi opportunities in a sophisticated way. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/JediSwap " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_mesh.jpg"><img>
            
@@ -1360,9 +1390,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_moonwell.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Moonwell is an open lending and borrowing DeFi protocol on Moonbeam & Moonriver. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/moonwelldefi " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_moonwell.jpg"><img>
            
@@ -1373,9 +1403,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_mudrex.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Mudrex is an Algo-trading platform that bridges investors and traders under a single roof with a subscription model. <br>
+              <a href="https://www.linkedin.com/company/mudrex/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/officialmudrex " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_mudrex.jpg"><img>
            
@@ -1387,9 +1417,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_oddz.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Oddz is a decentralized on-chain options trading platform. It allows users to create and trade customized options. It is compatible with Ethereum, Binance Smart Chain and Polkadot." <br>
+              <a href="https://www.linkedin.com/company/oddz-finance/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/oddz_finance " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_oddz.jpg"><img>
            
@@ -1398,9 +1428,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_paraswap.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Paraswap aggregates liquidity from decentralized exchanges & lending protocols to facilitate quick and gas efficient token swaps on the Ethereum blockchain. <br>
+              <a href="https://www.linkedin.com/company/paraswap/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/paraswap " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_paraswap.jpg"><img>
            
@@ -1409,9 +1439,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/DCF/port_persistence.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Persistence bridges DeFi and Traditional Finance by facilitating borrowing of cryptoassets using real-world assets as collateral. <br>
+              <a href="https://www.linkedin.com/company/persistenceone/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/PersistenceOne " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/DCF/port_persistence.jpg"><img>
            
@@ -1428,9 +1458,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_arena.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Arena is a platform that enables gaming streamers and content creators to engage with their communities and effectively monetize their content. <br>
+              <a href="https://www.linkedin.com/company/arena-gl/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/ArenaGL " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_arena.jpg"><img>
            
@@ -1440,9 +1470,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_arterra.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Arterra is an NFT platform hyper focussed on Esports and Gaming market. With NFTs from your favorite teams, leagues, and creators there is plenty to explore. <br>
+              <a href="https://www.linkedin.com/company/arterralabs/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/ARterraLabs " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_arterra.jpg"><img>
            
@@ -1452,9 +1482,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_comgaming.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Community Gaming is an E-sports tournament hosting and management platform. <br>
+              <a href="https://www.linkedin.com/company/communitygaming/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/CommunityGaming " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_comgaming.jpg"><img>
            
@@ -1463,9 +1493,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets/Game/port_Gamestar.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Gamestar+ aims to revolutionize board games by transforming them into interactive multimedia experiences. <br>
+              <a href="https://www.linkedin.com/company/gamestarplus/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/gamestarplus " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_Gamestar.jpg"><img>
            
@@ -1474,9 +1504,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_IndiGG.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               IndiGG is a Sub-DAO of Yield Guild Games (YGG) being build to create a Play-to-Earn gaming hub within India. <br>
+              <a href="https://www.linkedin.com/company/indi-gg/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/YGGIndia " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_IndiGG.jpg"><img>
            
@@ -1486,9 +1516,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_metaEngine.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               MetaEngine is the first decentralized all-in-one platform for the development and publishing of GameFi / Metaverse games and apps. <br>
+              <a href="https://www.linkedin.com/company/metaengine/ " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/meta_engine " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_metaEngine.jpg"><img>
            
@@ -1499,9 +1529,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_Midnight-evergreen.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Midnight Evergreen is a Gaming, Social Hub & 3D NFT Marketplace, spoked with multiple mid-core to AAA blockbuster entertainment experiences.<br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_Midnight-evergreen.jpg"><img>
            
@@ -1512,9 +1542,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_shrapnel.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Shrapnel is a blockchain-based first-person shooter published by the Neon gaming studio. <br>
+              <a href=" " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href=" " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_shrapnel.jpg"><img>
            
@@ -1523,9 +1553,9 @@
           <div class="boxess">
             <div id="show" class="hover-container">
                <img class="imge-hover" src="./assets//Game/port_snackclub.jpg"><img>
-               Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-              <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img>
-              <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img>
+               Snack Club is a gaming guild and management platform operated by Loud Esports <br>
+              <a href="https://www.linkedin.com/company/snackclubgg " target="_blank">  <img id="linkedin-img" src="assets/Logos/linkedin (1).png"></img></a>
+              <a href="https://twitter.com/SNACKCLUBgg " target="_blank">  <img id="linkedin-img" class="img-margin-5px" src="assets/Logos/twiter.png"></img></a>
             </div>
             <img class="imge" src="./assets/Game/port_snackclub.jpg"><img>
            
@@ -1649,8 +1679,8 @@
             <p>Pranav Sharma<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Partner</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/pranav-sharma-7a05b13/ "><img  id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
 
@@ -1662,8 +1692,8 @@
             <p>Himanshu Yadav <br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Partner</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/hyws/ "><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
    </div>
@@ -1674,8 +1704,8 @@
             <p>Prashanth Swaminathan<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/prashanth-swaminathan-a345934/ "><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
 
@@ -1685,8 +1715,8 @@
             <p>Adam Mastrelli<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner (US)/span></p>
-               <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+               <a href="https://www.linkedin.com/in/adammastrelli/"><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+               </a>
       </div>
       </div>
 
@@ -1696,8 +1726,8 @@
             <p>Trrishant Sidhwaani<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/trishant-sidhwani-81620326/"><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
 
@@ -1712,8 +1742,8 @@
             <p>Rajesh Pathania<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">General Counsel</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/rajeshpathania/"><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
 
@@ -1725,8 +1755,8 @@
             <p>Shailesh Puthran<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="#"><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
 
@@ -1738,8 +1768,8 @@
             <p>Indrajeet Sirsikar<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Partner</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/isirsikar/"><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
 
@@ -1751,8 +1781,8 @@
             <p>Srikanth Yeleswarapu<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Head - Technology</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/srikanth-yeleswarapu/"><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
 
@@ -1762,8 +1792,8 @@
             <p>Abhinav Pathak<br>
                <img style="margin:auto;display: block;width: 20px;" src="./assets/Images/Rectangle 1421.png"></img>
             <span class="span-pos-details">Research Partner</span></p>
-            <img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
-            
+            <a href="https://www.linkedin.com/in/iamabhinavpathak/"><img id="linkedin-img-team" class="our-team-linkedin" src="assets/Logos/linkedin (1).png"></img>
+            </a>
       </div>
       </div>
       </div>
@@ -1927,6 +1957,7 @@
             <ul>
                <li id="strong">About</li>
                <li onclick="ourOrigin(2)">Journey</li>
+               <li onclick="ourOrigin(2)">Fund Thesis</li>
                <li onclick="ourOrigin(3)">Portfolio</li>
                <li onclick="ourOrigin(4)">Team</li>
             </ul>
