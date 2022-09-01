@@ -64,10 +64,29 @@
                      }
                   </script>
                </li>
-               <li><a class="a-text" href="/Career">Career</a>
+               <li class="blog-main" id="about-main">Career<img id="downarrow" src="./assets/Designs/down-arrow.png"> <span></span>
+                  <!-- <img style="margin:auto;display: block;width: 30px;height: 2px;position: relative;right: 17px;" src="./assets/Images/Rectangle 1421.png"></img> -->
+                  <div id="blog-div" class="about-div">
+                     <p id="about-p"><a style="text-decoration: none;" href="#" target="_blank">Woodstock opening </a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p><div class="break-line"></div>
+                     <p id="about-p"> <a style="text-decoration: none;" href="Career" target="_blank">Portfolio Openings</a>
+                        <img id='border-img' style="display:block" src="./assets/Designs/Path 5831.png"></img></p> 
+                     
+                     <!-- <p onclick="ourOrigin(4)">Our Team</p> -->
+                  </div>
+                  <script>
+                     function showBlog(){
+                        document.getElementById('blog-div').style.display='block';
+                     }
+                     function hideBlog(){
+                        document.getElementById('blog-div').style.display='none';
+                     }
+                  </script>
+               </li>
+               <!-- <li><a class="a-text" href="/Career">Career</a>
                   <img style="margin:auto;display: block;width: 35px;height: 2px;position: relative;right: 10px;"
                      src="./assets/Images/Rectangle 1421.png"></img>
-               </li>
+               </li> -->
                <li><a class="a-text" onclick="ourOrigin(3)">Portfolio</a></li>
             </ul>
 
@@ -242,7 +261,7 @@
 
 
 
-   <div style="margin-bottom: 150px;" class="portfolio-section">
+   <!-- <div style="margin-bottom: 150px;" class="portfolio-section">
       <h3 style="margin-top: 70px;" class="below-header-container-heading">Woodstock Opening </h3>
       <img id="img-open" style="margin:auto;display: block;" src="./assets/Images/Rectangle 1421.png"></img>
 
@@ -347,7 +366,8 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
+   <br><br><br><br><br><br>
 
 
    <!-- SUBSCRIBE NEWS LETTER -->
@@ -363,7 +383,7 @@
       </div>
    </div>
    <div class="final-container">
-      <!-- <img src="./assets/Logos/brand.png"></img> -->
+      
       <div class="quick-link-parent-container">
          <div class="quick-links-container">
             <div>
@@ -381,6 +401,7 @@
                <ul>
                   <li id="strong">About</li>
                   <li onclick="ourOrigin(2)">Journey</li>
+                  <li onclick="ourOrigin(2)">Fund Thesis</li>
                   <li onclick="ourOrigin(3)">Portfolio</li>
                   <li onclick="ourOrigin(4)">Team</li>
                </ul>
